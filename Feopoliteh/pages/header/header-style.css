@@ -1,0 +1,647 @@
+@font-face {
+	font-family: M-b;
+	src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+	font-family: M-l;
+	src: url(../fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+	font-family: M-sm;
+	src: url(../fonts/Montserrat-SemiBold.ttf);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #191A1B;
+
+}
+
+.header__desktop{
+    display:flex;
+    margin:0 auto;
+    justify-content: center;
+    width:70%;
+    z-index: 9999;
+    background: #191A1B;
+    min-width: 1200px;
+    max-width:1350px;
+}
+.container__header{
+    width:100%; 
+    padding-top: 1rem;
+    
+}
+
+
+/* Верхний хэдер */
+.top__header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    margin-bottom: 1rem;
+    opacity: 1;
+}
+
+
+.date__week span{
+color: #FFF;
+font-family: M-l;
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+  
+
+/*Поисковая строка*/
+
+
+.cover__search{
+    display: block;
+}
+.search-container-device {
+    display: flex;
+    margin:0 auto;
+    justify-content:center ;
+    width: 100%;
+    height:fit-content;
+    transition: all 200ms ease-in;
+}
+
+.search-input-device:hover {
+    width: 12rem;
+}
+
+.search-input-device {
+    width: 5rem;
+    height: 2.3125rem;
+    padding: 0.313rem;
+    padding-left: 1rem;
+    box-sizing: border-box;
+    background: #303031;
+    border:none;
+    border-radius: 4.813rem 0rem 0rem 4.813rem;
+    outline: none;
+    font-family: M-sm;
+    font-size: 0.75rem;
+    transition: all 200ms ease-in; ;
+}
+.search__go{
+    height: 2.3125rem;
+    width: 2.3125rem;
+    background: #303031;
+    background-image: url(/Feopoliteh/images/search_icon.png);
+    background-repeat: no-repeat;
+    background-position: 0.5rem;
+    background-size:55%;
+    border:0;
+    border-radius: 0rem 4.813rem 4.813rem 0rem;
+    cursor: pointer;
+}
+
+.search-container-device input ::placeholder{
+    color:#959596;
+    margin:0;
+}
+
+
+
+
+/*Кнопка Версия для слабовидящих*/
+.version__visual{
+    display:flex;
+    align-items: baseline;
+}
+.version__visual img{
+width: 2.125rem;
+height: 2.125rem;
+}
+.eye__version{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14.625rem;
+    height: 2.3125rem;
+    background: #21CABF;
+    color:#FBFBFB;
+    padding:0.313rem;
+    border:0;
+    border-radius: 4.813rem;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    font-family: M-sm;
+
+}
+.eye__version p{
+    font-size: 0.75rem;
+}
+.eye__version:hover{
+    background: #004742;
+}
+
+.right-side{
+    display:flex;
+    margin-left: auto;
+    gap:3.125rem;
+}
+
+/*Нижний хэдер*/
+
+.nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    margin-bottom: 0.8rem;
+    
+}
+.navigation__links{
+    display: flex;
+    list-style-type: none;
+    gap:1rem;
+    white-space: nowrap;
+    margin-left: 0 auto;
+}
+.links__item{
+    text-decoration: none;
+    color:#FBFBFB;
+    font-family: M-sm;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 700;
+    transition: 500ms;
+    white-space: nowrap;
+}
+.links__item:hover{
+    color:#21CABF;
+}
+.logotype{
+    height: 3.25rem;
+    cursor:pointer;
+}
+
+.burger__menu{
+    display:none;
+
+}
+
+
+
+.burger__item{
+    transition:0.5ms;
+}
+.burger__item:hover{
+    color:#21CABF;
+}
+
+
+
+.overlay-burger-menu__open{
+    margin:0 auto;
+    position: fixed;
+    z-index: 999;
+    overflow: hidden;
+    display: none;
+    background: rgb(0, 0, 0);
+    width: 100vw;
+    height: 100vh;
+    
+    
+}
+.wrap__burger-menu{
+    display: block;
+    width:100%;
+    height: 100%;
+}
+.animated-burger-open {
+    animation: openBurger 1s ease-in-out forwards;
+  }
+
+  .animated-burger-close{
+    animation: closeBurger 1s ease-in-out forwards;
+  }
+
+
+@keyframes openBurger {
+    0% {
+      transform: translateY(-100vh);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes closeBurger {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(-100vh);
+    }
+  }
+
+.list-items{
+    display: block;
+    height: fit-content;
+    margin-top: 30%;
+}
+.content__burger-menu {
+    display: flex;
+    margin:0 auto;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    
+}
+
+.close-burger{
+    width:85vw;
+    margin-top: 6rem;
+}
+
+.close-burger img{
+    width: 4rem;
+    cursor: pointer;
+    float: right;
+}
+
+.burger__links{
+    text-align: center;
+    margin-bottom: 1em;
+    padding: 0;
+}
+
+.burger__item{
+    font-family: M-b;
+    text-decoration: none;
+    color:#FBFBFB;
+    font-size: 1.5rem;
+}
+
+.version__burger{
+    display: flex;
+    margin: 0 auto;
+    width: 70%;
+    height:5rem;
+    background: #21CABF;
+    border-radius: 4.813rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    box-sizing: border-box;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.version__burger p{
+    font-family: M-sm;
+    font-size: 1.5rem;
+    color:#FBFBFB;
+    text-align: center;
+}
+.version__burger img{
+    width:5rem;
+}
+
+
+
+
+
+
+/*Для устройств шириной до 480px*/
+@media only screen and (max-width: 480px) {
+    *{
+        font-size: 3vw;
+    }
+    body{
+        font-size: 3vw;
+    }
+    /*Хэдер*/
+    .date__week span{
+        font-size: 1.2rem;
+    }
+    .item__navigation__links{
+        display: none;
+    }
+    .logotype{
+        height: 4rem;
+    }
+    .header__desktop{
+        width:90%;
+        min-width: 50px;
+        max-width:480px;
+    }
+    .right-side{
+        display:none;
+    }
+
+    .date__week{
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        margin-top:1.5rem;
+        margin-bottom:1.5rem;
+    }
+    .burger__menu{
+        display: block;
+        cursor: pointer;
+    }
+    .burger__menu img{
+        width: 4rem;
+    }
+
+    .cover__search{
+        display: block;
+    }
+    .search-container-device {
+        display: flex;
+        margin:0 auto;
+        justify-content:center ;
+        width: 100%;
+        height: 100%;
+        transition: all 200ms ease-in;
+    }
+    
+    .search-input-device:hover {
+        width: 20rem;
+        height:4rem;
+    }
+    
+    .search-input-device {
+        width: 14rem;
+        height: 4rem;
+        padding: 2rem;
+        box-sizing: border-box;
+        background: #303031;
+        border:none;
+        border-radius: 4.813rem 0rem 0rem 4.813rem;
+        outline: none;
+        font-family: M-sm;
+        font-size: 1.5rem;
+    }
+    .search__go{
+        width:4rem;
+        height: 4rem;
+        background: #303031;
+        background-image: url(../../images/search_icon.png);
+        background-repeat: no-repeat;
+        background-position: 1rem;
+        background-size:55%;
+        border:0;
+        border-radius: 0rem 4.813rem 4.813rem 0rem;
+    }
+    
+    .search-container-device input ::placeholder{
+        color:#959596;
+        margin:0;
+    }
+    .close-burger img {
+        width: 2rem;
+    }
+    .burger__item {
+        font-size: 1.5rem;
+    }
+    .version__burger p {
+        font-size: 1.2rem;
+    }
+    .version__burger {
+        width: 90%;
+        height: 4rem;
+        margin-top: 2rem;
+    }
+    .burger__links {
+        margin-bottom: 2rem;
+    }
+    .version__burger img {
+        width: 3rem;
+    }
+
+}
+
+
+/*Для устройств шириной от 481px до 950px*/
+@media only screen and (min-device-width: 481px) and (max-device-width: 950px) {
+	* {
+		font-size: 2vw;
+	}
+
+	.body {
+		font-size: 2vw;
+	}
+
+	 /*Хэдер*/
+	 .logotype{
+        height: 4rem;
+    }
+    .header__desktop{
+        width:90%;
+        min-width: 350px;
+        max-width:950px;
+        
+    }
+    
+    .date__week span{
+        font-size: 1rem;
+    }
+  
+    .burger__menu{
+        display: block;
+        cursor: pointer;
+    }
+    .burger__menu img{
+        width: 5rem;
+    }
+
+    .burger__item{
+        font-size: 2rem;
+    }
+    .item__navigation__links{
+        display: none;
+    }
+   .content__burger-menu{
+    align-items: flex-start;
+   }
+   .list-items {
+    margin-top: 10%;
+}
+    
+    .right-side{
+        display:none;
+    }
+   
+    .date__week{
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        margin-top:0.5rem;
+    }
+    .close-burger img {
+        width: 3rem;
+    }
+
+    .cover__search{
+        display: block;
+    }
+  
+    
+    .search-input-device:hover {
+        width: 25rem;
+        height:5rem;
+    }
+    
+    .search-input-device {
+        width: 15rem;
+        height: 4rem;
+        box-sizing: border-box;
+        background: #303031;
+        border:none;
+        border-radius: 4.813rem 0rem 0rem 4.813rem;
+        outline: none;
+        font-family: M-sm;
+        font-size: 1.5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .search__go{
+        width:4rem;
+        height: 4rem;
+        background: #303031;
+        background-image: url(../images/search_icon.png);
+        background-repeat: no-repeat;
+        background-position: 0.5rem;
+        background-size:55%;
+        border:0;
+        border-radius: 0rem 4.813rem 4.813rem 0rem;
+    }
+    
+    .search-container-device input ::placeholder{
+        color:#959596;
+        margin:0;
+    }
+    .version__burger p {
+        font-size: 1.2rem;
+    }
+    .version__burger {
+        width: 70%;
+        height: 4rem;
+        margin-top: 2rem;
+    }
+    .burger__links {
+        margin-bottom: 2rem;
+    }
+    .version__burger img {
+        width: 3rem;
+    }
+}
+
+/*Для устройств шириной от 951px до 1350px*/
+
+@media only screen and (min-device-width: 951px) and (max-device-width: 1350px) {
+	*{
+        font-size: 1vw;
+    }
+    .body{
+        font-size: 1vw;
+    }
+
+
+
+    /*Хэдер*/
+
+    .item__navigation__links{
+        display: none;
+    }
+    .logotype{
+        height: 5rem;
+    }
+    .header__desktop{
+        width:80%;
+        min-width: 750px;
+        max-width:1350px;
+    }
+   
+    .right-side{
+        display:none;
+    }
+    .date__week span{
+        font-size: 1.5rem;
+    }
+    .date__week{
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        margin-top:1rem;
+    }
+
+    .burger__menu{
+        display: block;
+        cursor: pointer;
+    }
+    .burger__item{
+        font-size: 2rem;
+    }
+    .overlay-burger-menu__open{
+        position: fixed;
+        z-index: 9999;
+    }
+    .burger__menu img{
+        width: 6rem;
+    }
+    .list-items{
+        margin-top: 10%;
+    }
+
+ 
+    .cover__search{
+        display: block;
+    }
+  
+    
+    .search-input-device:hover {
+        width: 25rem;
+        height:5rem;
+    }
+    
+    .search-input-device {
+        width: 15rem;
+        height: 5rem;
+        box-sizing: border-box;
+        background: #303031;
+        border:none;
+        border-radius: 4.813rem 0rem 0rem 4.813rem;
+        outline: none;
+        font-family: M-sm;
+        font-size: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .search__go{
+        width:5rem;
+        height: 5rem;
+        background: #303031;
+        background-image: url(../images/search_icon.png);
+        background-repeat: no-repeat;
+        background-position: 0.5rem;
+        background-size:55%;
+        border:0;
+        border-radius: 0rem 4.813rem 4.813rem 0rem;
+    }
+    
+    .search-container-device input ::placeholder{
+        color:#959596;
+        margin:0;
+    }
+
+
+
+
+
+
+}
