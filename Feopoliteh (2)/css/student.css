@@ -1,0 +1,520 @@
+*{
+    margin:0;
+    padding:0;
+    font-size:16px;
+}
+@font-face {
+    font-family: M-b;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: M-l;
+    src: url(../fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: M-sm;
+    src: url(../fonts/Montserrat-SemiBold.ttf);
+}
+
+body{
+    margin:0;
+    padding:0;
+    background: #191A1B;
+}
+
+.wrap{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    max-width: 1350px;
+    min-width: 1200px;
+}
+
+.container{
+    width: 100%;
+    padding-top:120px;
+    padding-bottom: 20px;
+}
+
+
+/* Слайдер */
+
+.slider-top-title h1{
+    font-size: 48px;
+    color:#fff;
+    font-family: M-b;
+}
+
+.slider-top-title span{
+    font-size: 48px;
+    color:#29FFF1;
+    font-family: M-b;
+}
+
+.slider-container {
+    position: relative;
+    margin:0 auto;
+    margin-bottom: 120px;
+    width: 1350px;
+    height: 363px;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .slider-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #29FFF1;
+  }
+
+
+  /* Фильтр */
+
+  .filter-student{
+    border-radius: 2.5rem;
+    background: rgba(255, 255, 255, 0.12);
+    padding: 1.25rem 0;
+    text-align: center;
+}
+
+.list-filter{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.875rem;
+    align-items: center;
+    
+}
+
+.item-filter{
+    list-style-type: none;
+
+}
+
+.item-filter a{
+    text-decoration: none;  
+    outline:none;
+    text-transform: uppercase;
+
+    font-family: M-sm ;
+    color:#fff;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 200ms ease-in;
+}
+
+.item-filter a:hover{
+    color:#00ECDC;
+}
+
+
+/* Расписание */
+
+.schedule-title h1{
+    font-size: 40px;
+    color:#fff;
+    font-family: M-b;
+}
+
+.schedule-flex{
+    display: flex;
+    padding-top:32px;
+    column-gap: 50px;
+}
+
+.schedule-item{
+    width: 296px;
+    height: 213px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #1F2122;
+    transition: 100ms all ease-out;
+    position: relative;
+}
+
+.centered-text {
+    width: 296px;
+    height: 213px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .centered-text p {
+    margin: 0;
+    font-size: 25px;
+    font-family: M-b;
+    color:#ffff;
+  }
+
+  .shape {
+    width: 70px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 0 20px 0 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none; 
+  }
+
+
+  .fourth:hover .shape{
+    display: block;
+    border-radius: 0 20px 0 79px;
+    background: #8047DD;
+  }
+
+  .fourth:hover{
+    border: 5px solid #8047DD;
+    color: #936EE2;
+  }
+
+  .third:hover .shape{
+    display: block;
+    border-radius: 0 20px 0 79px;
+    background: #53DD47;
+  }
+
+  .third:hover{
+    border: 5px solid  #53DD47;
+    color: #53DD47;
+  }
+
+  .second:hover .shape{
+    display: block;
+    border-radius: 0 20px 0 79px;
+    background:  #DDC547;
+  }
+
+  .second:hover{
+    border: 5px solid  #DDC547;
+    color:  #DDC547;
+  }
+
+  .first:hover .shape{
+    display: block;
+    border-radius: 0 20px 0 79px;
+    background:  #DD4798;
+  }
+
+  .first:hover{
+    border: 5px solid  #DD4798;
+    color:  #DD4798;
+  }
+
+
+  /* Справка */
+
+  .reference-title h1{
+    font-size: 40px;
+    color:#fff;
+    font-family: M-b;
+    margin-bottom: 30px;
+}
+
+.reference-title p{
+    font-size: 28px;
+    color:#fff;
+    font-family: M-l;
+    line-height: 157.251%;
+    width: 673px;
+}
+
+.reference-block{
+    height: 459px;
+    border-radius: 20px;
+    background: #1F2122;
+    max-width: 1350px;
+    margin:0 auto;
+    position: relative;
+}
+
+.container-reference{
+    padding:40px 100px 40px 100px;
+    display: flex;
+    column-gap: 200px;
+}
+
+.inputs{
+    background: none;
+    border:none;
+    outline: none;
+    width: 400px;
+    border-bottom: 1px solid #B0B0B0;
+    transition: padding 0.3s;
+}
+
+.input__reference{
+    position: relative;
+}
+
+.inputs{
+    font-family: M-l;
+    color:#fff;
+    margin-bottom: 50px;
+}
+
+.inputs:not(:placeholder-shown){
+    padding:10px 0;
+}
+
+.inputs:hover {
+    padding:10px 0;
+}
+
+.input__reference p{
+    color: #FFF;
+    font-family: M-b;
+    font-size: 24px;
+}
+
+.radiobuttons{
+    display: flex;
+    align-items: center;
+    gap:14px;
+    margin-bottom: 10px;
+}
+
+.radiobuttons p{
+    font-family: M-l;
+    font-size: 16px;
+}
+
+.shape-reference{
+    position: absolute;
+    border-radius: 0px 20px 0px 128px;
+    background: #29FFF1;
+    width: 154px;
+    height: 110px;
+    right:0;
+}
+
+.button-block{
+   position: absolute;
+   width: 100%;
+   bottom: 0;
+   transform: translateY(-30px);
+}
+
+.button-block button{
+    display: flex;
+    margin:0 auto;
+    border-radius: 20px;
+    background: #21CABF;
+    padding:13px 60px;
+    border: none;
+    color:#ffff;
+    font-family: M-b;
+    cursor: pointer;
+    outline: none;
+    transition: 200ms all ease-in;
+}
+
+.button-block button:hover{
+    background: #1caaa1;
+}
+
+
+
+/* Дополнительная информация */
+
+.ad-information{
+  max-width: 1350px;
+  margin:0 auto;
+  padding:100px 0px 50px 0px;
+}
+
+.ad-information h1{
+  font-size: 40px;
+  color:#fff;
+  font-family: M-b;
+  margin-bottom: 30px;
+}
+
+.ag-courses_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+
+.ag-courses_item {
+  -ms-flex-preferred-size: calc(33.33333% - 30px);
+  flex-basis: calc(33.33333% - 30px);
+  margin: 0 15px 20px;
+  overflow: hidden;
+  border-radius: 28px;
+}
+
+
+.ag-courses-item_link {
+  display: block;
+  padding: 60px 20px 30px 20px;
+  background-color: #1F2122;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+}
+
+
+.ag-courses-item_link:hover,
+.ag-courses-item_link:hover .ag-courses-item_date {
+  text-decoration: none;
+  color: #FFF;
+}
+
+
+.ag-courses-item_link:hover .ag-courses-item_bg {
+  -webkit-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
+}
+
+
+.ag-courses-item_title {
+  min-height: 90px;
+  margin: 1% 0 15px;
+  font-family: M-sm;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 20px;
+  color: #FFF;
+  z-index: 2;
+  margin-top: 20px;
+  position: relative;
+}
+
+
+.ag-courses-item_bg {
+  height: 128px;
+  width: 128px;
+  background-color: #f9b234;
+  z-index: 1;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+  border-radius: 50%;
+
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.ag-courses_item:nth-child(2n) .ag-courses-item_bg {
+  background-color: #3ecd5e;
+}
+.ag-courses_item:nth-child(3n) .ag-courses-item_bg {
+  background-color: #e44002;
+}
+.ag-courses_item:nth-child(4n) .ag-courses-item_bg {
+  background-color: #952aff;
+}
+.ag-courses_item:nth-child(5n) .ag-courses-item_bg {
+  background-color: #cd3e94;
+}
+.ag-courses_item:nth-child(6n) .ag-courses-item_bg {
+  background-color: #4c49ea;
+}
+
+
+
+@media only screen and (max-width: 979px) {
+  .ag-courses_item {
+    -ms-flex-preferred-size: calc(50% - 30px);
+    flex-basis: calc(50% - 30px);
+  }
+  .ag-courses-item_title {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ag-format-container {
+    width: 96%;
+  }
+
+}
+@media only screen and (max-width: 639px) {
+  .ag-courses_item {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+  .ag-courses-item_title {
+    min-height: 72px;
+    line-height: 1;
+
+    font-size: 24px;
+  }
+  .ag-courses-item_link {
+    padding: 22px 40px;
+  }
+  .ag-courses-item_date-box {
+    font-size: 16px;
+  }
+}
+
+.links-blocks{
+  padding:50px 0px 0px 0px;
+}
+
+.item-links{
+  display: flex;
+  align-items: center;
+  gap:10px;
+}
+
+.mb-links{
+  margin-bottom: 30px;
+}
+
+.item-links a{
+  font-family: M-sm;
+  font-size: 20px;
+  color:#ffff;
+  text-decoration: none;
+}
+
+.item-links img{
+  width: 40px;
+}
+
+
