@@ -53,17 +53,75 @@ a{
   margin: 6rem 0rem 1rem 0rem;
 }
 
+/*Для устройств шириной до 480px*/
+@media only screen and (max-width: 480px){
+  *{
+      font-size: 3vw;
+  }
+  body{
+      font-size: 3vw;
+      width:100%;
+  }
+  .wrap{
+    min-width: 50px;
+    max-width:480px;
+    width:90%;
+  }
+  .container h1{
+      font-size: 2.3rem;
+      margin: 4.5rem 0rem 1rem 0rem;
+  }
+}
+
+/*Для устройств шириной от 481px до 950px*/
+@media only screen and (min-device-width: 481px) and (max-device-width: 950px) {
+  *{
+      font-size: 2vw;
+  }
+  body{
+      font-size: 2vw;
+      width:100%;
+  }
+  .wrap{
+    min-width: 480px;
+    max-width:950px;
+    width:90%;
+  }
+  .container h1{
+      font-size: 2.3rem;
+  }
+}
+
+/*Для устройств шириной от 951px до 1350px*/
+@media only screen and (min-device-width: 951px) and (max-device-width: 1350px) {
+  *{
+      font-size: 1vw;
+  }
+  body{
+      font-size: 2vw;
+      width:100%;
+  }
+  .wrap{
+      min-width: 750px;
+      max-width:1350px;
+      width:80%;
+  }
+  .container h1{
+      font-size: 2.3rem;
+  }
+}
+
 
 /* Слайдер */
 
 .slider-top-title h1{
-    font-size: 48px;
+    font-size: 3rem;
     color:#fff;
     font-family: M-b;
 }
 
 .slider-top-title span{
-    font-size: 48px;
+    font-size: 3rem;
     color:#29FFF1;
     font-family: M-b;
 }
@@ -71,9 +129,8 @@ a{
 .slider-container {
     position: relative;
     margin:0 auto;
-    margin-bottom: 120px;
-  
-    height: 363px;
+    margin-bottom: 7rem;
+    height: 22.688rem;
     overflow: hidden;
   }
   
@@ -86,7 +143,7 @@ a{
     flex: 0 0 100%;
   }
   
-  img {
+  .slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -94,16 +151,16 @@ a{
   
   .slider-dots {
     position: absolute;
-    bottom: 10px;
+    bottom: 0.625rem;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
   }
   
   .dot {
-    width: 10px;
-    height: 10px;
-    margin: 0 5px;
+    width: 0.625rem;
+    height: 0.625rem;
+    margin: 0 0.313rem;
     background-color: #ffffff;
     border-radius: 50%;
     cursor: pointer;
@@ -112,6 +169,49 @@ a{
   .dot.active {
     background-color: #29FFF1;
   }
+
+
+/*Для устройств шириной до 480px*/
+@media only screen and (max-width: 480px){
+  .slider-top-title h1 {
+    font-size: 2rem;
+}
+.slider-top-title h1 {
+  font-size: 2rem;
+}
+.slider-container {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  height: 20rem;
+  overflow: hidden;
+}
+.slide img {
+  width: 100%;
+  height: 150%;
+  object-fit: cover;
+}
+.slider-top{
+  width:100%;
+}
+.slider-dots {
+  display: none;
+}
+
+}
+
+
+/*Для устройств шириной от 481px до 950px*/
+@media only screen and (min-device-width: 481px) and (max-device-width: 950px) {
+  .slider-container {
+    margin-bottom: 5rem;
+    height: 16.688rem;
+}
+
+}
+
+
+
 
 
   /* Фильтр */
@@ -139,7 +239,6 @@ a{
     text-decoration: none;  
     outline:none;
     text-transform: uppercase;
-
     font-family: M-sm ;
     color:#fff;
     font-size: 1.125rem;
@@ -154,12 +253,39 @@ a{
 }
 
 
+
+/*Для устройств шириной до 480px*/
+@media only screen and (max-width: 480px){
+  .item-filter a {
+    font-size: 0.7rem;
+}
+.list-filter {
+  gap: 0.3rem;
+}
+.filter-student {
+  padding: 1.5rem 2rem;
+}
+
+}
+
+/*Для устройств шириной от 481px до 950px*/
+@media only screen and (min-device-width: 481px) and (max-device-width: 950px) {
+  .item-filter a {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
+
 /* Расписание */
 
 
 .schedule-flex{
     display: flex;
-    padding-top:32px;
+    padding-top:2rem;
     justify-content: space-between;
 }
 
@@ -167,8 +293,8 @@ a{
     width: 17.8rem;
     height: 12.6rem;
     flex-shrink: 0;
-    border: 5px solid #1F2122;
-    border-radius: 20px;
+    border: 0.313rem solid #1F2122;
+    border-radius: 1.25rem;
     background: #1F2122;
     transition: all 200ms ease-in ;
     position: relative;
@@ -185,22 +311,22 @@ a{
   
   .centered-text p {
     margin: 0;
-    font-size: 25px;
+    font-size: 1.563rem;
     font-family: M-b;
     color:#ffff;
   }
 
   .shape {
     display: block;
-    width: 70px;
-    height: 56px;
+    width: 4.375rem;
+    height: 3.5rem;
     flex-shrink: 0;
     position: absolute;
     top: 0;
     right: 0;
     color:#1F2122;
     transition: all 200ms ease-in ;
-    border-radius: 0 20px 0 79px;
+    border-radius: 0 1.25rem 0 5rem;
   }
 
 
@@ -209,7 +335,7 @@ a{
   }
 
   .fourth:hover{
-    border: 5px solid #8047DD;
+    border: 0.313rem solid #8047DD;
     color: #936EE2;
   }
 
@@ -218,7 +344,7 @@ a{
   }
 
   .third:hover{
-    border: 5px solid  #53DD47;
+    border: 0.313rem solid  #53DD47;
     color: #53DD47;
   }
 
@@ -227,7 +353,7 @@ a{
   }
 
   .second:hover{
-    border: 5px solid  #DDC547;
+    border: 0.313rem solid  #DDC547;
     color:  #DDC547;
   }
 
@@ -236,31 +362,65 @@ a{
   }
 
   .first:hover{
-    border: 5px solid  #DD4798;
+    border: 0.313rem solid  #DD4798;
     color:  #DD4798;
   }
+
+
+/*Для устройств шириной до 480px*/
+@media only screen and (max-width: 480px){
+  .schedule-item {
+    width: 13.8rem;
+    height: 6.6rem;
+}
+.schedule-flex {
+  display: flex;
+  padding-top: 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 1.6rem;
+}
+.button-block {
+  margin-top: 1rem;
+}
+}
+
+/*Для устройств шириной от 481px до 950px*/
+@media only screen and (min-device-width: 481px) and (max-device-width: 950px) {
+  .schedule-flex {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+}
+.schedule-item {
+  width: 20.8rem;
+  height: 12.6rem;
+}
+
+}
+
 
 
   /* Справка */
 
   .reference-title h1{
-    font-size: 40px;
+    font-size: 2.5rem;
     color:#fff;
     font-family: M-b;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 
 .reference-title p{
-    font-size: 28px;
+    font-size: 1.75rem;
     color:#fff;
     font-family: M-l;
     line-height: 157.251%;
-    width: 673px;
+    width: 42.063rem;
     padding-bottom: 1.5rem;
 }
 
 .reference-block{
-    height: 459px;
+  height: fit-content;
     border-radius: 20px;
     background: #1F2122;
     max-width: 1350px;
@@ -269,17 +429,18 @@ a{
 }
 
 .container-reference{
-    padding:40px 100px 40px 100px;
+    padding:2.5rem 6.25rem 2.5rem 6.25rem;
     display: flex;
-    column-gap: 200px;
+    column-gap: 12.5rem;
+    flex-wrap: wrap;
 }
 
 .inputs{
     background: none;
     border:none;
     outline: none;
-    width: 400px;
-    border-bottom: 1px solid #B0B0B0;
+    width: 25rem;
+    border-bottom: 0.063rem solid #B0B0B0;
     transition: padding 0.3s;
 }
 
@@ -290,58 +451,57 @@ a{
 .inputs{
     font-family: M-l;
     color:#fff;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
 }
 
 .inputs:not(:placeholder-shown){
-    padding:10px 0;
+    padding:0.625rem 0;
 }
 
 .inputs:hover {
-    padding:10px 0;
+    padding:0.625rem 0;
 }
 
 .input__reference p{
     color: #FFF;
     font-family: M-sm;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .radiobuttons{
     display: flex;
     align-items: center;
-    gap:14px;
-    margin-bottom: 10px;
+    gap:0.875rem;
+    margin-bottom: 0.625rem;
 }
 
 
 .radiobuttons p{
     font-family: M-l;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .shape-reference{
     position: absolute;
-    border-radius: 0px 20px 0px 128px;
+    border-radius: 0rem 1.25rem 0rem 8rem;
     background: #29FFF1;
-    width: 154px;
-    height: 110px;
+    width: 9.625rem;
+    height: 6.875rem;
     right:0;
 }
 
 .button-block{
-   position: absolute;
+  position: relative;
    width: 100%;
    bottom: 0;
-   transform: translateY(-30px);
 }
 
 .button-block button{
     display: flex;
     margin:0 auto;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     background: #21CABF;
-    padding:13px 60px;
+    padding:0.813rem 3.75rem;
     border: none;
     color:#ffff;
     font-family: M-b;
@@ -354,6 +514,52 @@ a{
     background: #1caaa1;
 }
 
+/*Для устройств шириной до 480px*/
+@media only screen and (max-width: 480px){
+  .reference-title p {
+    font-size: 1.5rem;
+    width:auto;
+    padding-bottom: 1.5rem;
+}
+.container-reference {
+  padding: 3.5rem 3.5rem 3.5rem 3.5rem;
+  column-gap: 0;
+  flex-wrap: wrap;
+}
+
+.inputs {
+  width: 100%;
+
+}
+.input__reference{
+  width:100%;
+}
+.shape-reference {
+  width: 6.625rem;
+  height: 4.875rem;
+}
+.button-block{
+  margin-top: 1rem;
+}
+}
+
+/*Для устройств шириной от 481px до 950px*/
+@media only screen and (min-device-width: 481px) and (max-device-width: 950px) {
+  .reference-title p {
+    font-size: 1.5rem;
+  }
+  .inputs {
+    width: 100%;
+  
+  }
+  .input__reference{
+    width:100%;
+  }
+  .button-block{
+    margin-top: 1rem;
+  }
+}
+
 
 
 /* Дополнительная информация */
@@ -364,10 +570,10 @@ a{
 }
 
 .ad-information h1{
-  font-size: 40px;
+  font-size: 2.5rem;
   color:#fff;
   font-family: M-b;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 
 .ag-courses_box {
@@ -384,16 +590,16 @@ a{
 }
 
 .ag-courses_item {
-  -ms-flex-preferred-size: calc(33.33333% - 30px);
-  flex-basis: calc(33.33333% - 30px);
+  -ms-flex-preferred-size: calc(33.33333% - 1.875rem);
+  flex-basis: calc(33.33333% - 1.875rem);
   overflow: hidden;
-  border-radius: 28px;
+  border-radius: 1.75rem;
 }
 
 
 .ag-courses-item_link {
   display: block;
-  padding: 60px 20px 30px 20px;
+  padding: 3.75rem 1.25rem 1.875rem 1.25rem;
   background-color: #1F2122;
   overflow: hidden;
   position: relative;
@@ -416,27 +622,27 @@ a{
 
 
 .ag-courses-item_title {
-  min-height: 90px;
-  margin: 1% 0 15px;
+  min-height: 5.625rem;
+  margin: 1% 0 1rem;
   font-family: M-sm;
   overflow: hidden;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #FFF;
   z-index: 2;
-  margin-top: 20px;
+  margin-top: 1.25rem;
   position: relative;
 }
 
 
 .ag-courses-item_bg {
-  height: 128px;
-  width: 128px;
+  height: 8rem;
+  width: 8rem;
   background-color: #f9b234;
   z-index: 1;
   position: absolute;
-  top: -75px;
-  right: -75px;
+  top: -4.688rem;
+  right: -4.688rem;
   border-radius: 50%;
 
   -webkit-transition: all .5s ease;
@@ -463,17 +669,22 @@ a{
 
 @media only screen and (max-width: 979px) {
   .ag-courses_item {
-    -ms-flex-preferred-size: calc(50% - 30px);
-    flex-basis: calc(50% - 30px);
+    -ms-flex-preferred-size: calc(50% - 1.875rem);
+    flex-basis: calc(50% - 1.875rem);
   }
   .ag-courses-item_title {
-    font-size: 24px;
+    min-height: 6.5rem;
+    font-size: 1.3rem;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .ag-format-container {
     width: 96%;
+  }
+  .ag-courses-item_title {
+    min-height: 6.5rem;
+    font-size: 1.3rem;
   }
 
 }
@@ -483,16 +694,15 @@ a{
     flex-basis: 100%;
   }
   .ag-courses-item_title {
-    min-height: 72px;
+    min-height: 4.5rem;
     line-height: 1;
-
-    font-size: 24px;
+    font-size: 1.3rem;
   }
   .ag-courses-item_link {
-    padding: 22px 40px;
+    padding: 1.375rem 2.5rem;
   }
   .ag-courses-item_date-box {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 
@@ -503,22 +713,22 @@ a{
 .item-links{
   display: flex;
   align-items: center;
-  gap:10px;
+  gap:0.625rem;
 }
 
 .mb-links{
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 
 .item-links a{
   font-family: M-sm;
-  font-size: 20px;
+  font-size: 1.25rem;
   color:#ffff;
   text-decoration: none;
 }
 
 .item-links img{
-  width: 40px;
+  width: 2.5rem;
 }
 
 

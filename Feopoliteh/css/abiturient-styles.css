@@ -295,7 +295,7 @@ a{
     .filter-abiturient{
         margin-top: 5rem;
         border:0;
-        background-color: #1F2122;
+        background-color: rgba(255, 255, 255, 0.12);;
     }
     .item-filter a{
         font-size: 0.7rem;
@@ -310,7 +310,7 @@ a{
     .filter-abiturient{
         margin-top: 7rem;
         border:0;
-        background-color: #1F2122;
+        background-color: rgba(255, 255, 255, 0.12);;
     }
     .item-filter a{
         font-size: 1rem;

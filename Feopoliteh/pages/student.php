@@ -17,7 +17,7 @@
     <h1><span>#</span>СТУДЕНЧЕСКАЯЖИЗНЬ</h1>
     </div>
 </div>
-<div class="wrap">
+<div class="slider-top wrap">
 <div class="slider-container container">
     <div class="slider">
       <div class="slide"><img src="../images/st-slide1.jpg" alt="Slide 1"></div>
@@ -101,9 +101,6 @@
 <div class="wrap">
 <div class="reference-block container">
 <div class="shape-reference"></div>
-<div class="button-block">
-  <button>ОТПРАВИТЬ</button>
-  </div>
   <div class="container-reference">
     <div class="input__reference">
       <p>ФИО</p>
@@ -127,6 +124,9 @@
       <p>Электронная печать</p>
       </div>
       </div>
+      <div class="button-block">
+  <button>ОТПРАВИТЬ</button>
+  </div>
   </div>
 </div>
 </div>
