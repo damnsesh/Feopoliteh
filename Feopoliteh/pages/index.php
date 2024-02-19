@@ -14,7 +14,7 @@
 </head>
 <body>
    
-<?php include('header/header.html'); ?> 
+<?php include('../pages/header/header.html'); ?> 
  
 
     <section class="center-block__wrap wrap">

@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../css/student-styles.css">
     <link rel="stylesheet" href="header/header-style.css">
     <link rel="stylesheet" href="footer/footer-style.css">
+    <link rel="shortcut icon" href="../images/fpt.ico">
     <title>Студенту</title>
 </head>
 <body>
@@ -60,30 +61,85 @@
 <div class="wrap">
   <div class="schedule-flex container">
 
-  <div class="schedule-item first">
+  <div class="schedule-item first" onclick="showBlocks('container-hidden-course1')">
   <div class="shape"></div>
   <div class="centered-text">
     <p>1 КУРС</p>
   </div>
   </div>
-  <div class="schedule-item second">
+  <div class="schedule-item second" onclick="showBlocks('container-hidden-course2')">
   <div class="shape"></div>
   <div class="centered-text">
     <p>2 КУРС</p>
   </div>
   </div>
-  <div class="schedule-item third">
+  <div class="schedule-item third" onclick="showBlocks('container-hidden-course3')">
   <div class="shape"></div>
   <div class="centered-text">
     <p>3 КУРС</p>
   </div>
   </div>
-  <div class="schedule-item fourth">
+  <div class="schedule-item fourth" onclick="showBlocks('container-hidden-course4')">
     <div class="shape"></div>
   <div class="centered-text">
     <p>4 КУРС</p>
   </div>
   </div>
+</div>
+</div>
+
+<div class="wrap">
+
+<div class="container-hidden-course1 chcourse" id="container-hidden-course1">
+  <a class="hidden-course colorcourse1" href="https://feopoliteh.ru/studentu/raspisanie-zanyatij/tm-23-1-9">ТМ 23 1/9</a>
+    <a class="hidden-course colorcourse1" href="https://feopoliteh.ru/studentu/raspisanie-zanyatij/mepz-23-1-9">МЭПЗ 23 1/9</a>
+    <a class="hidden-course colorcourse1" href="https://feopoliteh.ru/studentu/raspisanie-zanyatij/pkd-23-1-9">ПКД 23 1/9</a>
+    <a class="hidden-course colorcourse1" href="https://feopoliteh.ru/studentu/raspisanie-zanyatij/ispp-23-1-9">ИСПП 23 1/9</a>
+    <a class="hidden-course colorcourse1" href="https://feopoliteh.ru/studentu/raspisanie-zanyatij/ispp-23-2-9">ИСПП 23 2/9</a>
+    <a class="hidden-course colorcourse1" href="https://feopoliteh.ru/studentu/raspisanie-zanyatij/ispr-23-1-9">ИСПР 23 1/9</a>
+    <a class="hidden-course colorcourse1" href="https://feopoliteh.ru/studentu/raspisanie-zanyatij/ebu-23-1-9">ЭБУ 23 1/9</a>
+    <a class="hidden-course colorcourse1" href="https://feopoliteh.ru/studentu/raspisanie-zanyatij/pso-23-1-9">ПСО 23 1/9</a>
+    <a class="hidden-course colorcourse1" href="https://feopoliteh.ru/studentu/raspisanie-zanyatij/pso-23-2-9">ПСО 23 2/9</a>
+    <a class="hidden-course colorcourse1" href="https://feopoliteh.ru/studentu/raspisanie-zanyatij/pso-23-1-11">ПСО 23 1/11</a>
+    <a class="hidden-course "> </a>
+    <a class="hidden-course "> </a>
+</div>
+<div class="container-hidden-course2 chcourse" id="container-hidden-course2">
+  <a class="hidden-course colorcourse2" href="https://feopoliteh.ru/studentu/raspisanie-zanyatij/tm-22-1-9">ТМ 22 1/9</a>
+    <a class="hidden-course colorcourse2" href="https://feopoliteh.ru/studentu/raspisanie-zanyatij/mepz-22-1-9">МЭПЗ 22 1/9</a>
+    <a class="hidden-course colorcourse2" href="https://feopoliteh.ru/studentu/raspisanie-zanyatij/pkd-22-1-9">ПКД 22 1/9</a>
+    <a class="hidden-course colorcourse2" href="https://feopoliteh.ru/studentu/raspisanie-zanyatij/ispp-22-1-9">ИСПП 22 1/9</a>
+    <a class="hidden-course colorcourse2" href="https://feopoliteh.ru/studentu/raspisanie-zanyatij/ispp-22-2-9">ИСПП 22 2/9</a>
+    <a class="hidden-course colorcourse2" href="https://feopoliteh.ru/studentu/raspisanie-zanyatij/ispp-22-3-9">ИСПП 22 3/9</a>
+    <a class="hidden-course colorcourse2" href="https://feopoliteh.ru/studentu/raspisanie-zanyatij/ebu-22-1-9">ЭБУ 22 1/9</a>
+    <a class="hidden-course colorcourse2" href="https://feopoliteh.ru/studentu/raspisanie-zanyatij/pso-22-1-9">ПСО 22 1/9</a>
+    <a class="hidden-course colorcourse2" href="https://feopoliteh.ru/studentu/raspisanie-zanyatij/pso-22-2-9">ПСО 22 2/9</a>
+    <a class="hidden-course colorcourse2" href="https://feopoliteh.ru/studentu/raspisanie-zanyatij/pso-22-1-11">ПСО 22 1/11</a>
+    <a class="hidden-course "> </a>
+    <a class="hidden-course "> </a>
+</div>
+<div class="container-hidden-course3 chcourse" id="container-hidden-course3">
+  <a class="hidden-course colorcourse3" href="https://feopoliteh.ru/studentu/raspisanie-zanyatij/tm-21-1-9">ТМ 21 1/9</a>
+    <a class="hidden-course colorcourse3" href="https://feopoliteh.ru/studentu/raspisanie-zanyatij/mepz-21-1-9">МЭПЗ 21 1/9</a>
+    <a class="hidden-course colorcourse3" href="https://feopoliteh.ru/studentu/raspisanie-zanyatij/pkd-21-1-9">ПКД 21 1/9</a>
+    <a class="hidden-course colorcourse3" href="https://feopoliteh.ru/studentu/raspisanie-zanyatij/ispp-21-1-9">ИСПП 21 1/9</a>
+    <a class="hidden-course colorcourse3" href="https://feopoliteh.ru/studentu/raspisanie-zanyatij/ispp-21-2-9">ИСПП 21 2/9</a>
+    <a class="hidden-course colorcourse3" href="https://feopoliteh.ru/studentu/raspisanie-zanyatij/ispr-21-1-9">ИСПР 21 1/9</a>
+    <a class="hidden-course colorcourse3" href="https://feopoliteh.ru/studentu/raspisanie-zanyatij/ebu-21-1-9">ЭБУ 21 1/9</a>
+    <a class="hidden-course colorcourse3" href="https://feopoliteh.ru/studentu/raspisanie-zanyatij/pso-21-1-9">ПСО 21 1/9</a>
+    <a class="hidden-course colorcourse3" href="https://feopoliteh.ru/studentu/raspisanie-zanyatij/pso-21-2-9">ПСО 21 2/9</a>
+    <a class="hidden-course "> </a>
+    <a class="hidden-course "> </a>
+</div>
+<div class="container-hidden-course4 chcourse" id="container-hidden-course4">
+  <a class="hidden-course colorcourse4" href="https://feopoliteh.ru/studentu/raspisanie-zanyatij/tm-20-1-9">ТМ 20 1/9</a>
+    <a class="hidden-course colorcourse4" href="https://feopoliteh.ru/studentu/raspisanie-zanyatij/mepz-20-1-9">МЭПЗ 20 1/9</a>
+    <a class="hidden-course colorcourse4" href="https://feopoliteh.ru/studentu/raspisanie-zanyatij/tpp-20-1-9">ТПП 20 1/9</a>
+    <a class="hidden-course colorcourse4" href="https://feopoliteh.ru/studentu/raspisanie-zanyatij/ispp-20-1-9">ИСПП 20 1/9</a>
+    <a class="hidden-course colorcourse4" href="https://feopoliteh.ru/studentu/raspisanie-zanyatij/ispp-20-2-9">ИСПП 20 2/9</a>
+    <a class="hidden-course colorcourse4" href="https://feopoliteh.ru/studentu/raspisanie-zanyatij/ispr-20-1-9">ИСПР 20 1/9</a>
+    <a class="hidden-course "> </a>
+    <a class="hidden-course "> </a>
 </div>
 </div>
     </section>

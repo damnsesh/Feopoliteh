@@ -1,0 +1,656 @@
+*{
+    margin:0;
+    padding:0;
+    font-size:16px;
+}
+@font-face {
+    font-family: M-b;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: M-l;
+    src: url(../fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: M-sm;
+    src: url(../fonts/Montserrat-SemiBold.ttf);
+}
+
+body{
+  margin:0;
+  padding:0;
+  background: #191A1B;
+  font-size:16px;
+}
+a{
+  text-decoration: none;  
+  outline:none;
+  color:inherit;
+}
+
+.wrap{
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+  max-width: 1350px;
+  min-width: 1200px;
+}
+
+.container{
+  width: 100%;
+}
+
+.container h1{
+  color: #FFF;
+  text-transform: uppercase;
+  font-family: M-b;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+/*Для устройств шириной до 480px*/
+@media only screen and (max-width: 480px){
+  *{
+      font-size: 3vw;
+  }
+  body{
+      font-size: 3vw;
+      width:100%;
+  }
+  .wrap{
+    min-width: 50px;
+    max-width:480px;
+    width:90%;
+  }
+  .container h1{
+      font-size: 2.3rem;
+  }
+}
+
+/*Для устройств шириной от 481px до 950px*/
+@media only screen and (min-device-width: 481px) and (max-device-width: 950px) {
+  *{
+      font-size: 2vw;
+  }
+  body{
+      font-size: 2vw;
+      width:100%;
+  }
+  .wrap{
+    min-width: 480px;
+    max-width:950px;
+    width:90%;
+  }
+  .container h1{
+      font-size: 2.3rem;
+  }
+}
+
+/*Для устройств шириной от 951px до 1350px*/
+
+@media only screen and (min-device-width: 951px) and (max-device-width: 1350px) {
+  *{
+      font-size: 1vw;
+  }
+  body{
+      font-size: 2vw;
+      width:100%;
+  }
+  .wrap{
+      min-width: 750px;
+      max-width:1350px;
+      width:80%;
+  }
+  .container h1{
+      font-size: 2.3rem;
+  }
+}
+
+
+
+/* Блоки */
+
+.container-flex-blocks{
+    margin:0 auto;
+    padding:3.25rem 0rem 8rem 0rem;
+}
+
+.flex-line{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 1rem;
+}
+.flex-line2{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap:0.833vw;
+}
+
+.flex-line-second{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.container__item{
+    padding: 1.5rem;
+    font-family: M-sm;
+    font-size: 0.9vw;
+    color:#ffff;
+    text-transform: uppercase;
+    
+}
+
+.item__first-flex-line{
+    width: 11.303vw;
+    height: 9.375rem;
+    background: #1F2122;
+    border-radius: 1.25rem;
+    margin-bottom: 1.063rem;
+    border:0.3rem solid #1F2122;
+    cursor:pointer;
+}
+
+.item__second-flex-line{
+    width:12.5rem;
+    height: 20rem;
+    background: #1F2122;
+    border-radius: 1.25rem;
+    border:0.3rem solid #1F2122;
+    cursor:pointer;
+}
+
+.item__third-flex-line{
+    width: 16.667vw;
+    height: 20rem;
+    background: #1F2122;
+    border-radius: 1.25rem;
+    border:0.3rem solid #1F2122;
+    cursor:pointer;
+}
+
+.item__fourth-flex-line{
+    width: 14rem;
+    height: 9.375rem;
+    background: #1F2122;
+    border-radius: 1.25rem;
+    margin-bottom: 1rem;
+    border:0.3rem solid #1F2122;
+    cursor:pointer;
+}
+
+.item__fifth-flex-line{
+    width: 16.4rem;
+    height: 20.063rem;
+    background: #1F2122;
+    border-radius: 1.25rem;
+    margin-bottom: 1rem;
+    border:0.3rem solid #1F2122;
+    cursor:pointer;
+}
+
+.csI{
+    padding: 1.5rem 0.875rem;
+}
+
+.ctI{
+    padding:1.5rem 2rem;
+}
+
+.cfI{
+    padding:1.5rem 1rem;
+}
+
+.cfiI{
+    padding:1.5rem 1rem;
+}
+
+.hover-effect{
+    transition: 200ms all ease-in;
+}
+
+.hover-effect:hover{
+    border:0.3rem solid #29FFF1;
+}
+
+
+.item__first-flex-line-second{
+    width: 13.333vw;
+    height: 9.375rem;
+    background: #1F2122;
+    border-radius: 1.25rem;
+    margin-bottom: 1rem;
+    border:0.3rem solid #1F2122;
+    cursor:pointer;
+}
+
+.item__second-flex-line-second{
+    width: 13rem;
+    height: 9.375rem;
+    background: #1F2122;
+    border-radius: 1.25rem;
+    margin-bottom: 1rem;
+    border:0.3rem solid #1F2122;
+    cursor:pointer;
+}
+
+.item__third-flex-line-second{
+    width: 14.271vw;
+    height: 9.375rem;
+    background: #1F2122;
+    border-radius: 1.25rem;
+    margin-bottom: 1rem;
+    border:0.3rem solid #1F2122;
+    cursor:pointer;
+}
+
+.item__fourth-flex-line-second{
+    width: 18.594vw;
+    height: 7.25rem;
+    background: #1F2122;
+    border-radius: 1.25rem;
+    margin-bottom: 1rem;
+    border:0.3rem solid #1F2122;
+    cursor:pointer;
+}
+
+.item__fifth-flex-line-second{
+    width: 21vw;
+    height: 7.25rem;
+    background: #1F2122;
+    border-radius: 1.25rem;
+    margin-bottom:  1rem;
+    border:0.3rem solid #1F2122;
+    cursor:pointer;
+}
+
+.item__sixth-flex-line-second{
+    width: 13.75vw;
+    height: 17.875rem;
+    background: #1F2122;
+    border-radius: 1.25rem;
+    margin-bottom:  1rem;
+    border:0.3rem solid #1F2122;
+    cursor:pointer;
+}
+
+.item__seven-flex-line-second{
+    width: 14rem;
+    height: 9.375rem;
+    background: #1F2122;
+    border-radius: 1.25rem;
+    margin-bottom:  1rem;
+    border:0.3rem solid #1F2122;
+    cursor:pointer;
+}
+
+.item__eight-flex-line-second{
+    width: 14rem;
+    height: 7.25rem;
+    background: #1F2122;
+    border-radius: 1.25rem;
+    margin-bottom:  1rem;
+    border:0.3rem solid #1F2122;
+    cursor:pointer;
+}
+
+
+.twoParts-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap:  1rem;
+}
+
+
+/* Основные сведения */
+
+
+
+.main-title h1{
+    font-size: 2.5rem;
+    font-family: M-b;
+    color:#fff;
+    text-transform: uppercase;
+}
+
+.main-information{
+    margin-top:1.875rem;
+    background: #1F2122;
+    height: 28.125rem;
+    border-radius: 1.25rem;
+    position: relative;
+}
+
+.flex__main-information{
+    display: flex;
+    flex-direction: row;
+}
+
+.container-info{
+    padding:1.563rem 3.25rem;
+}
+
+.right-map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:26.25rem;
+    height: 28.125rem;
+}
+
+.map__container{
+    overflow:hidden;
+    width:26.25rem;
+    height: 28.125rem;
+    border-radius: 0rem 1.25rem 1.25rem 0rem;
+}
+.map__a1{
+    color:#eee;
+    font-size:0.75rem;
+    position:absolute;
+    top:0px;
+}
+.map__a2{
+    color:#eee;
+    font-size:0.75rem;
+    position:absolute;
+    top:14px;
+}
+.map__iframe{
+   width:100%; 
+   border-radius: 0rem 1.25rem 1.25rem 0rem;
+   height: 28.125rem;
+   position:relative;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+  }
+
+   th, td {
+    border-bottom: 0.063rem solid #3D4145;
+  }
+
+  th, td {
+    padding: 0.813rem 0rem 0.813rem 0rem;
+    color:#ffff;
+
+    
+  }
+  
+  th{
+    font-family: M-sm;
+    font-size: 0.875rem;
+    width: 60%;
+  }
+  
+  td{
+    width: 28%;
+    font-family: M-l;
+    font-size: 0.75rem;
+  }
+
+
+ 
+.noborder{
+    border: 0;
+}
+
+
+.small-text{
+    font-size: 0.625rem;
+}
+
+.nopaddingText{
+    padding:0rem 0rem 0.813rem 0rem;
+}
+
+.cyanText{
+    font-size: 0.75rem;
+    font-family: M-sm;
+    color:#29FFF1;
+}
+
+.strongText{
+    font-family: M-sm;
+    font-size: 0.813rem;
+}
+
+.cyanText a{
+  font-size: 0.75rem;
+  font-family: M-sm;
+  color:#29FFF1;
+}
+
+
+/* Педагогический состав */
+
+.teacher-title h1{
+    font-size: 2.5rem;
+    font-family: M-b;
+    color:#fff;
+    text-transform: uppercase;
+    padding:5.5rem 0rem 1.875rem 0rem;
+}
+
+.management-item{
+  position: relative;
+  flex-basis:auto!important;
+  width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 20px;
+}
+.management-link{
+  height:2rem!important;
+}
+.management-title{
+    text-align: center;
+    color:#fff;
+    font-size: 1.5rem;
+    font-family: M-sm;
+    margin: 0!important;
+}
+
+.shape{
+    position: absolute;
+    background: #29FFF1;
+    width: 4.375rem;
+    height: 3.5rem;
+    border-radius: 0 1.25rem 0 3.75rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.ag-courses_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 3.125rem 0;
+    justify-content: space-between;
+  }
+  
+  .ag-courses_item {
+    -ms-flex-preferred-size: calc(33.33333% - 1.875rem);
+    flex-basis: calc(33.33333% - 1.875rem);
+    margin: 0 0rem 2rem;
+    overflow: hidden;
+    border-radius: 1.75rem;
+  }
+  
+  
+  .ag-courses-item_link {
+    display: block;
+    padding: 2.5rem 1.25rem 1.875rem 1.25rem;
+    background-color: #1F2122;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    height: 11rem;
+  }
+  .ag-courses-item_title {
+    text-transform: uppercase;
+  }
+  .ag-courses-item_title p{
+    margin-bottom: 0.625rem;
+    text-transform: uppercase;
+  }
+
+  .colorText1{
+    color:#A571FB;
+  }
+
+  .colorText2{
+    color:#53DD47;
+  }
+
+  .colorText3{
+    color:#DD4798;
+  }
+
+  .colorText4{
+    color:#DD6247;
+  }
+
+  .colorText5{
+    color:#DDC547;
+  }
+
+  .colorText6{
+    color:#4795DD;
+  }
+  
+  .ag-courses-item_link:hover,
+  .ag-courses-item_link:hover .ag-courses-item_date {
+    text-decoration: none;
+    color: #FFF;
+  }
+  
+  
+  .ag-courses-item_link:hover .ag-courses-item_bg {
+    -webkit-transform: scale(10);
+    -ms-transform: scale(10);
+    transform: scale(10);
+  }
+  
+  .management-link:hover .management-bg {
+    -webkit-transform: scale(40);
+    -ms-transform: scale(40);
+    transform: scale(40);
+  }
+  .management-bg{
+    -webkit-transition: all .8s ease !important;
+    -o-transition: all .8s ease !important;
+    transition: all .8s ease !important;
+  }
+  
+  .ag-courses-item_title {
+    min-height: 5.625rem;
+    margin: 1% 0 1rem;
+    font-family: M-sm;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #FFF;
+    z-index: 2;
+    margin-top: 1.25rem;
+    position: relative;
+  }
+  
+  
+  .ag-courses-item_bg {
+    height: 8rem;
+    width: 8rem;
+    background-color: #8047DD;
+    z-index: 1;
+    position: absolute;
+    top: -4.688rem;
+    right: -4.688rem;
+    border-radius: 50%;
+  
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  .ag-courses_item:nth-child(1n) .ag-courses-item_bg{
+    background-color: #1fcfc4;
+  }
+  .ag-courses_item:nth-child(2n) .ag-courses-item_bg{
+    background-color: #8047DD;
+  }
+  .ag-courses_item:nth-child(3n) .ag-courses-item_bg{
+    background-color: #53DD47;
+  }
+  .ag-courses_item:nth-child(4n) .ag-courses-item_bg {
+    background-color: #DD4798;
+  }
+  .ag-courses_item:nth-child(5n) .ag-courses-item_bg {
+    background-color: #DD6247;
+  }
+  .ag-courses_item:nth-child(6n) .ag-courses-item_bg {
+    background-color: #DDC547;
+  }
+  .ag-courses_item:nth-child(7n) .ag-courses-item_bg {
+    background-color: #4795DD;
+  }
+
+  .ag-courses_item:hover .hover-effect-text{
+    color:#ffff;
+  }
+
+  
+  
+  
+  @media only screen and (max-width: 979px) {
+    .ag-courses_item {
+      -ms-flex-preferred-size: calc(50% - 1.875rem);
+      flex-basis: calc(50% - 1.875rem);
+    }
+    .ag-courses-item_title {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .ag-format-container {
+      width: 96%;
+    }
+  
+  }
+  @media only screen and (max-width: 639px) {
+    .ag-courses_item {
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+    }
+    .ag-courses-item_title {
+      min-height: 4.5rem;
+      line-height: 1;
+  
+      font-size: 1.5rem;
+    }
+    .ag-courses-item_link {
+      padding: 1.375rem 2.5rem;
+    }
+    .ag-courses-item_date-box {
+      font-size: 1rem;
+    }
+  }

@@ -390,7 +390,7 @@ a{
 }
 
 .text-item h2{
-    width: 21.875rem;
+    width: 18rem;
     font-family: M-b;
     font-size: 1.406rem;
     font-style: normal;
@@ -601,7 +601,7 @@ a{
 
 .right__text{
     color: #FFF !important;
-    font-family: Montserrat;
+    font-family: M-sm;
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 800;

@@ -283,11 +283,69 @@ a{
 /* Расписание */
 
 
+.chcourse {
+  padding-top:4.375rem;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 3.438rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  margin:0 auto;
+}
+
+.hidden-course {
+  width: 18.5rem;
+  height: 4.563rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 200ms ease-in;
+  border-radius: 1.25rem;
+  font-family: M-sm;
+  font-size: 1.75rem;
+  color:#fff;
+}
+
+.colorcourse1{
+  background-color: #DD4798;
+}
+
+.colorcourse2{
+  background-color: #DDC547;
+}
+
+.colorcourse3{
+  background-color: #53DD47;
+}
+
+.colorcourse4{
+  background-color: #8047DD;
+}
+
+.colorcourse1:hover {
+  background-color: #DD4798;
+}
+
+.colorcourse2:hover {
+  background-color: #ad9a3a;
+}
+
+.colorcourse3:hover {
+  background-color: #49b93e;
+}
+
+.colorcourse3:hover {
+  background-color: #7240c4;
+}
+
 .schedule-flex{
     display: flex;
     padding-top:2rem;
     justify-content: space-between;
 }
+
 
 .schedule-item{
     width: 17.8rem;
@@ -367,6 +425,7 @@ a{
   }
 
 
+
 /*Для устройств шириной до 480px*/
 @media only screen and (max-width: 480px){
   .schedule-item {
@@ -383,6 +442,14 @@ a{
 .button-block {
   margin-top: 1rem;
 }
+
+.hidden-course {
+  width: 14.4rem;
+  height: 4.563rem;
+}
+.chcourse {
+  row-gap: 1.6rem;
+}
 }
 
 /*Для устройств шириной от 481px до 950px*/
@@ -395,6 +462,13 @@ a{
 .schedule-item {
   width: 20.8rem;
   height: 12.6rem;
+}
+.hidden-course {
+  width: 21.4rem;
+  height: 5rem;
+}
+.chcourse {
+  row-gap: 1.6rem;
 }
 
 }

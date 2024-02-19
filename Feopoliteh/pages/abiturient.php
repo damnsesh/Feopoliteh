@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/abiturient-styles.css">
     <link rel="stylesheet" href="header/header-style.css">
     <link rel="stylesheet" href="footer/footer-style.css">
+    <link rel="shortcut icon" href="../images/fpt.ico">
     <title>Абитуриенту</title>
 </head>
 <body>

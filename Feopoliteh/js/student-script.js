@@ -126,3 +126,36 @@ document.addEventListener('DOMContentLoaded', function () {
       
     });
   });
+
+  function showBlocks(containerId, clickedElement) {
+    // Скрываем все контейнеры
+    const containers = document.querySelectorAll('.chcourse');
+    containers.forEach(container => {
+      container.style.opacity = 0;
+      container.style.display = 'none';
+    });
+  
+    // Отображаем выбранный контейнер
+    const selectedContainer = document.getElementById(containerId);
+    selectedContainer.style.display = 'flex';
+    setTimeout(() => {
+      selectedContainer.style.opacity = 1;
+    }, 0);
+  
+    // Удаляем класс 'active' у всех элементов с классом 'schedule-item'
+    document.querySelectorAll('.schedule-item').forEach(element => {
+      element.classList.remove('active');
+    });
+  
+    // Добавляем класс 'active' только к нажатому элементу
+    clickedElement.classList.add('active');
+
+    
+  }
+  
+  // Добавляем обработчик клика для скрытия блоков при нажатии на сами блоки внутри контейнеров
+  document.querySelectorAll('.chcourse a').forEach(link => {
+    link.addEventListener('click', (event) => {
+      event.stopPropagation();
+    });
+  });
