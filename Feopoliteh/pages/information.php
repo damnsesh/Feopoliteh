@@ -14,141 +14,90 @@
    <?php include('header/header.html'); ?> 
 
 
-   <section class="blocks wrap">
-      <div class="container-flex-blocks container">
-         <div class="flex-line">
-            <div class="first-flex-line">
-            <a href="#info">
-               <div class="item__first-flex-line hover-effect">
-                  <div class="container__item">
-                     ОСНОВНЫЕ СВЕДЕНИЯ
-                  </div>
-               </div>
-               </a>
-               <a href="http://feopoliteh.ru/svedeniya-ob-obrazovatel-noj-organizacii/obrazovanie">
-               <div class="item__first-flex-line hover-effect">
-                  <div class="container__item">
-                     ОБРАЗОВАНИЕ
-                  </div>
-               </div>
-               </a>
-            </div>
-            <div class="second-flex-line">
-            <a href="http://feopoliteh.ru/svedeniya-ob-obrazovatel-noj-organizacii/vakantnye-mesta-dlya-priema-perevoda">
-               <div class="item__second-flex-line hover-effect">
-                  <div class="container__item csI">
-                     Вакантные места для приема (перевода)
-                  </div>
-               </div>
-               </a>
-            </div>
-            <div class="third-flex-line">
-            <a href="#teachers">
-               <div class="item__third-flex-line hover-effect">
-                  <div class="container__item ctI">
-                     Руководство. Педагогический состав
-                  </div>
-               </div>
-               </a>
-            </div>
-            <div class="fourth-flex-line">
-            <a href="http://feopoliteh.ru/svedeniya-ob-obrazovatel-noj-organizacii/obrazovatel-nye-standarty-i-trebovaniya">
-               <div class="item__fourth-flex-line hover-effect">
-                  <div class="container__item cfI">
-                     Образовательные стандарты и требования
-                  </div>
-               </div>
-               </a>
-               <a href="http://feopoliteh.ru/svedeniya-ob-obrazovatel-noj-organizacii/stipendii-i-mery-podderzhki-obuchayushihsya">
-               <div class="item__fourth-flex-line hover-effect">
-                  <div class="container__item cfI">
-                     Стипендии и меры поддержки обучающихся
-                  </div>
-               </div>
-               </a>
-            </div>
-            <div class="fifth-flex-line">
-            <a href="http://feopoliteh.ru/svedeniya-ob-obrazovatel-noj-organizacii/material-no-tehnicheskoe-obespechenie-i-osnashennost-obrazovatel-nogo-processa">
-               <div class="item__fifth-flex-line hover-effect">
-                  <div class="container__item cfiI">
-                     Материально-техническое обеспечение и оснащенность образовательного процесса
-                  </div>
-               </div>
-               </a>
-            </div>
-         </div>
-         <div class="twoParts-flex">
-            <div class="two-parts-item">
-               <div class="flex-line2">
-                  <div class="first-flex-line-second">
-                  <a href="http://feopoliteh.ru/svedeniya-ob-obrazovatel-noj-organizacii/finansovo-hozyajstvennaya-deyatel-nost">
-                     <div class="item__first-flex-line-second hover-effect">
-                        <div class="container__item">
-                           Финансово-хозяйственная деятельность
-                        </div>
-                     </div>
-                     </a>
-                  </div>
-                  <a href="http://feopoliteh.ru/svedeniya-ob-obrazovatel-noj-organizacii/struktura-i-organy-upravleniya-obrazovatel-noj-organizacii">
-                  <div class="item__second-flex-line-second hover-effect">
-                     <div class="container__item">
-                        СТРУКТУРА И ОРГАНЫ УПРАВЛЕНИЯ
-                     </div>
-                  </div>
-                  </a>
-                  <a href="http://feopoliteh.ru/svedeniya-ob-obrazovatel-noj-organizacii/organizaciya-pitaniya-v-obrazovatel-noj-organizacii">
-                  <div class="item__third-flex-line-second hover-effect">
-                     <div class="container__item">
-                        Организация питания в образовательной организации
-                     </div>
-                  </div>
-                  </a>
-               </div>
-               <div class="flex-line2">
-                  <div class="first-flex-line-second">
-                  <a href="http://feopoliteh.ru/svedeniya-ob-obrazovatel-noj-organizacii/dostupnaya-sreda">
-                     <div class="item__fourth-flex-line-second hover-effect">
-                        <div class="container__item">
-                           Доступная среда
-                        </div>
-                     </div>
-                     </a>
-                  </div>
-                  <a href="http://feopoliteh.ru/svedeniya-ob-obrazovatel-noj-organizacii/platnye-obrazovatel-nye-uslygi">
-                  <div class="item__fifth-flex-line-second hover-effect">
-                     <div class="container__item">
-                        Платные образовательные услуги
-                     </div>
-                  </div>
-                  </a>
-               </div>
-            </div>
-            <a href="http://feopoliteh.ru/svedeniya-ob-obrazovatel-noj-organizacii/mezhdunarodnoe-sotrudnichestvo">
-            <div class="item__sixth-flex-line-second hover-effect">
-               <div class="container__item">
-                  Международное сотрудничество
-               </div>
-            </div>
+   <section class="wrap">
+        <div class="grid-links container">
+
+        <div class="grid-links__item item--a">
+            <a href="#info" class="grid-link__txt">
+            ОСНОВНЫЕ СВЕДЕНИЯ
+        </a>
+        </div>
+        <div class="grid-links__item item--b">
+            <a href="http://feopoliteh.ru/svedeniya-ob-obrazovatel-noj-organizacii/vakantnye-mesta-dlya-priema-perevoda" class="grid-link__txt">
+            Вакантные места для приема (перевода)
+        </a>
+        </div>
+        <div class="grid-links__item item--c">
+            <a href="#teachers" class="grid-link__txt">
+            Руководство. Педагогический состав
+        </a>
+        </div>
+        <div class="grid-links__item item--d">
+            <a href="http://feopoliteh.ru/svedeniya-ob-obrazovatel-noj-organizacii/obrazovatel-nye-standarty-i-trebovaniya" class="grid-link__txt">
+            Образовательные стандарты и требования
             </a>
-            <div class="block-rigth">
-            <a href="http://feopoliteh.ru/svedeniya-ob-obrazovatel-noj-organizacii/goryachaya-liniya-v-sisteme-spo">
-               <div class="item__seven-flex-line-second hover-effect">
-                  <div class="container__item">
-                     Горячая линия в системе СПО
-                  </div>
-               </div>
-               </a>
-               <a href="http://feopoliteh.ru/svedeniya-ob-obrazovatel-noj-organizacii/dokumenty">
-               <div class="item__eight-flex-line-second hover-effect">
-                  <div class="container__item">
-                     Документы
-                  </div>
-               </div>
-               </a>
-            </div>
-         </div>
-      </div>
-</section>
+        </div>
+        <div class="grid-links__item item--e">
+            <a  href="http://feopoliteh.ru/svedeniya-ob-obrazovatel-noj-organizacii/material-no-tehnicheskoe-obespechenie-i-osnashennost-obrazovatel-nogo-processa" class="grid-link__txt">
+            Материально-техническое обеспечение и оснащенность образовательного процесса
+            </a>
+        </div>
+        <div class="grid-links__item item--f">
+            <a href="http://feopoliteh.ru/svedeniya-ob-obrazovatel-noj-organizacii/obrazovanie" class="grid-link__txt">
+            ОБРАЗОВАНИЕ
+            </a>
+        </div>
+        <div class="grid-links__item item--g">
+            <a href="http://feopoliteh.ru/svedeniya-ob-obrazovatel-noj-organizacii/stipendii-i-mery-podderzhki-obuchayushihsya" class="grid-link__txt">
+            Стипендии и меры поддержки обучающихся
+            </a>
+        </div>
+        <div class="grid-links__item item--h">
+            <a href="http://feopoliteh.ru/svedeniya-ob-obrazovatel-noj-organizacii/finansovo-hozyajstvennaya-deyatel-nost" class="grid-link__txt">
+            Финансово-хозяйственная деятельность
+            </a>
+        </div>
+        <div class="grid-links__item item--i">
+            <a href="http://feopoliteh.ru/svedeniya-ob-obrazovatel-noj-organizacii/struktura-i-organy-upravleniya-obrazovatel-noj-organizacii" class="grid-link__txt">
+            СТРУКТУРА И ОРГАНЫ УПРАВЛЕНИЯ
+            </a>
+        </div>
+        <div class="grid-links__item item--j">
+            <a href="http://feopoliteh.ru/svedeniya-ob-obrazovatel-noj-organizacii/organizaciya-pitaniya-v-obrazovatel-noj-organizacii" class="grid-link__txt">
+            Организация питания в образовательной организации
+            </a>
+        </div>
+        <div class="grid-links__item item--k">
+            <a href="http://feopoliteh.ru/svedeniya-ob-obrazovatel-noj-organizacii/mezhdunarodnoe-sotrudnichestvo" class="grid-link__txt">
+            Международное сотрудничество
+            </a>
+        </div>
+        <div class="grid-links__item item--l">
+            <a href="http://feopoliteh.ru/svedeniya-ob-obrazovatel-noj-organizacii/goryachaya-liniya-v-sisteme-spo" class="grid-link__txt">
+            Горячая линия в системе СПО
+            </a>
+        </a>
+        </div>
+        <div class="grid-links__item item--m">
+            <a href="http://feopoliteh.ru/svedeniya-ob-obrazovatel-noj-organizacii/dostupnaya-sreda" class="grid-link__txt">
+            Доступная среда
+            </a>
+        </a>
+        </div>
+        <div class="grid-links__item item--n">
+            <a href="http://feopoliteh.ru/svedeniya-ob-obrazovatel-noj-organizacii/platnye-obrazovatel-nye-uslygi" class="grid-link__txt">
+            Платные образовательные услуги
+            </a>
+        </a>
+        </div>
+        <div class="grid-links__item item--o">
+            <a href="http://feopoliteh.ru/svedeniya-ob-obrazovatel-noj-organizacii/dokumenty" class="grid-link__txt">
+            Документы
+            </a>
+        </a>
+        </div>
+    </div>
+      </section>
     
 
 <div class="wrap">
