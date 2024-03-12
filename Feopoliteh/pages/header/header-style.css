@@ -1,16 +1,16 @@
 @font-face {
 	font-family: M-b;
-	src: url(../fonts/Montserrat-Bold.ttf);
+	src: url(../../fonts/Montserrat-Bold.ttf);
 }
 
 @font-face {
 	font-family: M-l;
-	src: url(../fonts/Montserrat-Light.ttf);
+	src: url(../../fonts/Montserrat-Light.ttf);
 }
 
 @font-face {
 	font-family: M-sm;
-	src: url(../fonts/Montserrat-SemiBold.ttf);
+	src: url(../../fonts/Montserrat-SemiBold.ttf);
 }
 
 body {
@@ -513,7 +513,7 @@ height: 2.125rem;
         width:4rem;
         height: 4rem;
         background: #303031;
-        background-image: url(../images/search_icon.png);
+        background-image: url(../../images/search_icon.png);
         background-repeat: no-repeat;
         background-position: 0.5rem;
         background-size:55%;
@@ -626,7 +626,7 @@ height: 2.125rem;
         width:5rem;
         height: 5rem;
         background: #303031;
-        background-image: url(../images/search_icon.png);
+        background-image: url(../../images/search_icon.png);
         background-repeat: no-repeat;
         background-position: 0.5rem;
         background-size:55%;
@@ -641,7 +641,119 @@ height: 2.125rem;
 
 
 
-
-
-
 }
+
+
+
+
+
+.scroll-btn-wrap{
+    display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1700px;
+  min-width: 1350px;
+}
+.scroll-btn-container{
+    display: grid;
+    width: 100%;
+    
+}
+.btn-gotop {
+    position: fixed;
+    z-index: 1000;
+    width: 3.125rem;
+    height: 3.125rem;
+    bottom: 5rem;
+    border: solid 1px #1fcfc4;
+    border-radius: 50%;
+    background-color: #1fcfc4;
+    background-image: url(../../images/arrow.png);
+    background-size:2rem;
+    background-repeat: no-repeat;
+    background-position-x:center;
+    background-position-y:0.7rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 1s;
+    justify-self: flex-end;
+    
+    &.show {
+      opacity: 1;
+    }
+  
+    &:hover {
+      border: 1.5px solid #29FFF1;
+      background-color: #29FFF1;
+    }
+  }
+  
+
+  /*Для устройств шириной до 480px*/
+@media only screen and (max-width: 480px){
+    *{
+        font-size: 3vw;
+    }
+    body{
+        font-size: 3vw;
+        width:100%;
+    }
+    .scroll-btn-wrap{
+      min-width: 50px;
+      max-width:480px;
+      width:90%;
+    }
+    .scroll-btn-container h1{
+        font-size: 2.3rem;
+    }
+
+    .btn-gotop:hover{
+        border: 1.5px solid #1fcfc4;
+      background-color: #1fcfc4;
+    }
+  }
+  
+  /*Для устройств шириной от 481px до 950px*/
+  @media only screen and (min-device-width: 481px) and (max-device-width: 950px) {
+    *{
+        font-size: 2vw;
+    }
+    body{
+        font-size: 2vw;
+        width:100%;
+    }
+    .scroll-btn-wrap{
+      min-width: 480px;
+      max-width:950px;
+      width:90%;
+    }
+    .scroll-btn-container h1{
+        font-size: 2.3rem;
+    }
+
+    .btn-gotop:hover{
+        border: 1.5px solid #1fcfc4;
+      background-color: #1fcfc4;
+    }
+  }
+  
+  /*Для устройств шириной от 951px до 1350px*/
+  
+  @media only screen and (min-device-width: 951px) and (max-device-width: 1350px) {
+    *{
+        font-size: 1vw;
+    }
+    body{
+        font-size: 2vw;
+        width:100%;
+    }
+    .scroll-btn-wrap{
+        min-width: 750px;
+        max-width:1400px;
+        width:93%;
+    }
+    .scroll-btn-container h1{
+        font-size: 2.3rem;
+    }
+  }

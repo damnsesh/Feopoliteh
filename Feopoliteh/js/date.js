@@ -1,3 +1,31 @@
+document.addEventListener("DOMContentLoaded", function() {
+  const animateButton = document.getElementById("animateButton");
+  const closeButton = document.getElementById("closeButton");
+  const animatedElement = document.getElementById("animatedElement");
+
+
+  animateButton.addEventListener("click", function() {
+    animatedElement.style.display = "flex";
+    animatedElement.style.justifyContent="center";
+    animatedElement.classList.add("animated-burger-open");
+  });
+
+  closeButton.addEventListener("click", function() {
+    // Заменяем класс "animated" на "closed", чтобы закрыть анимацию
+    animatedElement.classList.replace("animated-burger-open", "animated-burger-close");
+    
+    // Делаем задержку перед скрытием элемента, чтобы анимация завершилась
+    setTimeout(function() {
+      animatedElement.style.display = "none";
+      animatedElement.classList.remove("animated-burger-open", "animated-burger-close");
+    }, 1000); // Задержка в 1 секунду (время анимации)
+
+    
+  });
+});
+
+
+
 window.addEventListener('DOMContentLoaded', function() {
     var dateElement = document.getElementById('date');
     var weekTypeElement = document.getElementById('week-type');
@@ -33,3 +61,42 @@ window.addEventListener('DOMContentLoaded', function() {
     var options = { day: 'numeric', month: 'long', year: 'numeric' };
     return date.toLocaleDateString('ru-RU', options);
   }
+
+
+
+  let requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+
+document.addEventListener('DOMContentLoaded', function() {
+  const goTopButton = document.querySelector('[data-action="gotop"]');
+  const windowViewPortHeight = window.innerHeight; // browser viewport height
+  let isRequestingAnimationFrame = false;
+
+  if (!goTopButton) {
+    return;
+  }
+
+  goTopButton.addEventListener('click', function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+
+  window.addEventListener('scroll', function() {
+    if (!isRequestingAnimationFrame) {
+      requestAnimationFrame(filterGoTopButtonVisibility);
+      isRequestingAnimationFrame = true;
+    }
+  });
+
+  function filterGoTopButtonVisibility(timestamp) {
+    let windowPageYOffset = window.pageYOffset || document.documentElement.scrollTop;
+    if (windowPageYOffset > windowViewPortHeight) {
+      goTopButton.classList.add('show');
+      isRequestingAnimationFrame = false;
+    } else {
+      goTopButton.classList.remove('show');
+      requestAnimationFrame(filterGoTopButtonVisibility);
+    }
+  }
+})

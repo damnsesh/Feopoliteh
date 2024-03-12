@@ -1,16 +1,16 @@
 @font-face {
 	font-family: M-b;
-	src: url(../fonts/Montserrat-Bold.ttf);
+	src: url(../../fonts/Montserrat-Bold.ttf);
 }
 
 @font-face {
 	font-family: M-l;
-	src: url(../fonts/Montserrat-Light.ttf);
+	src: url(../../fonts/Montserrat-Light.ttf);
 }
 
 @font-face {
 	font-family: M-sm;
-	src: url(../fonts/Montserrat-SemiBold.ttf);
+	src: url(../../fonts/Montserrat-SemiBold.ttf);
 }
 
 body {

@@ -370,6 +370,129 @@ transition: 200ms all ease-in;
 }
 
 
+.information__p{
+margin-top: 2rem;
+}
+
+.information__p p{
+  color:white;
+  font-family: M-l;
+  font-size:1rem;
+  line-height: 2rem;
+  text-align: justify;
+}
+.hidden-txt{
+  display:none;
+}
+.read__more2{
+  display:none;
+  cursor: pointer;
+  font-family: M-sm;
+  font-size:1.15rem;
+  color:#29FFF1;
+  line-height: 2rem;
+}
+
+.read__more1{
+  cursor: pointer;
+  font-family: M-sm;
+  font-size:1.15rem;
+  color:#29FFF1;
+  line-height: 2rem;
+}
+
+
+/*Для устройств шириной до 480px*/
+@media only screen and (max-width: 480px){
+  .flex__main-information {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.right-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.map__container {
+  overflow: hidden;
+  width: 100%;
+  height: 28.125rem;
+  border-radius: 0rem 0rem 1.25rem 1.25rem;
+}
+.map__iframe {
+  width: 100%;
+  border-radius: 0rem 0rem 1.25rem 1.25rem;
+  height: 28.125rem;
+  position: relative;
+}
+
+.main-information {
+  height: fit-content;
+}
+
+.map__a1 {
+  top: auto;
+}
+.map__a2 {
+  top: auto;
+}
+
+.container-info {
+  padding: 1rem 1rem;
+}
+
+}
+
+/*Для устройств шириной от 481px до 950px*/
+@media only screen and (min-device-width: 481px) and (max-device-width: 950px) {
+  .flex__main-information {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.right-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+}
+.map__container {
+  overflow: hidden;
+  width: 100%;
+  height: 18.125rem;
+  border-radius: 0rem 0rem 1.25rem 1.25rem;
+}
+.map__iframe {
+  width: 100%;
+  border-radius: 0rem 0rem 1.25rem 1.25rem;
+  height: 18.125rem;
+  position: relative;
+}
+
+.main-information {
+  height: fit-content;
+}
+
+.map__a1 {
+  top: auto;
+}
+.map__a2 {
+  top: auto;
+}
+
+.container-info {
+  padding: 1rem 2rem;
+}
+
+}
+
+
+
+
+
 /* Педагогический состав */
 
 .teacher-title h1{
@@ -569,16 +692,14 @@ transition: 200ms all ease-in;
     }
   
   }
-  @media only screen and (max-width: 639px) {
+  @media only screen and (max-width: 480px) {
     .ag-courses_item {
       -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
     }
     .ag-courses-item_title {
       min-height: 4.5rem;
-      line-height: 1;
-  
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
     .ag-courses-item_link {
       padding: 1.375rem 2.5rem;
@@ -586,4 +707,34 @@ transition: 200ms all ease-in;
     .ag-courses-item_date-box {
       font-size: 1rem;
     }
+    
   }
+
+  /*Для устройств шириной до 480px*/
+@media only screen and (max-width: 480px){
+
+
+.management-title {
+  text-align:left;
+  padding:1rem 0rem 0rem 0rem !important;
+}
+
+.ag-courses-item_title {
+  line-height: 1.2;
+}
+
+.ag-courses-item_link {
+  height: fit-content !important;
+}
+
+.ag-courses_box {
+  padding: 3.125rem 0rem 0rem 0rem;
+}
+}
+
+/*Для устройств шириной от 481px до 950px*/
+@media only screen and (min-device-width: 481px) and (max-device-width: 950px) {
+  .ag-courses-item_title {
+    font-size: 1.2rem;
+}
+}
