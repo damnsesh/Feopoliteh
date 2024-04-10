@@ -1,0 +1,22 @@
+<svg width="33.000000" height="31.000000" viewBox="0 0 33 31" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip14_1165">
+			<rect id="road-alt-svgrepo-com" width="33.000000" height="31.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip14_1165)">
+		<path id="path" d="M11.78 26.28L16.43 17.55L21.21 26.28L16.53 23.91L11.78 26.28Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M16.43 17.55L21.21 26.28L16.53 23.91L11.78 26.28L16.43 17.55Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000"/>
+		<path id="path" d="M21.99 4.73L21.96 4.72C21.85 4.32 22.07 3.91 22.48 3.79C22.88 3.68 23.29 3.91 23.4 4.31L23.39 4.34L21.99 4.73ZM28.88 23.67L28.9 23.69C29.02 24.09 28.79 24.5 28.39 24.61C27.98 24.73 27.58 24.5 27.46 24.1L27.47 24.07L28.88 23.67Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M22.68 4.52L28.18 23.89" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round"/>
+		<path id="path" d="M5.52 24.07L5.53 24.1C5.41 24.5 5.01 24.73 4.6 24.61C4.2 24.5 3.97 24.09 4.09 23.69L4.11 23.67L5.52 24.07ZM9.6 4.34L9.59 4.31C9.7 3.91 10.11 3.68 10.51 3.79C10.92 3.91 11.14 4.32 11.03 4.72L11 4.73L9.6 4.34Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M4.81 23.89L10.31 4.52" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round"/>
+		<path id="path" d="M15.76 10.99L15.75 10.97C15.75 10.55 16.08 10.22 16.5 10.22C16.91 10.22 17.25 10.55 17.25 10.97L17.23 10.99L15.76 10.99ZM17.23 13.54L17.25 13.56C17.25 13.98 16.91 14.31 16.5 14.31C16.08 14.31 15.75 13.98 15.75 13.56L15.76 13.54L17.23 13.54Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M16.5 10.97L16.5 13.56" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round"/>
+		<path id="path" d="M15.76 4.54L15.75 4.52C15.75 4.1 16.08 3.77 16.5 3.77C16.91 3.77 17.25 4.1 17.25 4.52L17.23 4.54L15.76 4.54ZM17.23 7.08L17.25 7.1C17.25 7.52 16.91 7.85 16.5 7.85C16.08 7.85 15.75 7.52 15.75 7.1L15.76 7.08L17.23 7.08Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M16.5 4.52L16.5 7.1" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round"/>
+	</g>
+</svg>

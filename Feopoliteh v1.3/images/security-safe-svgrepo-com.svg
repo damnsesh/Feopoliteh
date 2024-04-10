@@ -1,0 +1,18 @@
+<svg width="33.000000" height="31.000000" viewBox="0 0 33 31" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip14_1140">
+			<rect id="security-safe-svgrepo-com" width="33.000000" height="31.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip14_1140)">
+		<path id="path" d="M28.75 14.36C28.75 20.67 23.87 26.59 17.2 28.32C16.74 28.44 16.25 28.44 15.79 28.32C9.12 26.59 4.24 20.67 4.24 14.36L4.24 8.69C4.24 7.63 5.1 6.43 6.16 6.03L13.81 3.08C15.53 2.42 17.47 2.42 19.19 3.08L26.85 6.03C27.89 6.43 28.76 7.63 28.76 8.69L28.75 14.36Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M17.2 28.32C16.74 28.44 16.25 28.44 15.79 28.32C9.12 26.59 4.24 20.67 4.24 14.36L4.24 8.69C4.24 7.63 5.1 6.43 6.16 6.03L13.81 3.08C15.53 2.42 17.47 2.42 19.19 3.08L26.85 6.03C27.89 6.43 28.76 7.63 28.76 8.69L28.75 14.36C28.75 20.67 23.87 26.59 17.2 28.32Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"/>
+		<path id="path" d="M16.5 16.14C18.01 16.14 19.25 14.98 19.25 13.56C19.25 12.13 18.01 10.97 16.5 10.97C14.98 10.97 13.75 12.13 13.75 13.56C13.75 14.98 14.98 16.14 16.5 16.14Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M19.25 13.56C19.25 12.13 18.01 10.97 16.5 10.97C14.98 10.97 13.75 12.13 13.75 13.56C13.75 14.98 14.98 16.14 16.5 16.14C18.01 16.14 19.25 14.98 19.25 13.56Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"/>
+		<path id="path" d="M15.76 16.16L15.75 16.14C15.75 15.72 16.08 15.39 16.5 15.39C16.91 15.39 17.25 15.72 17.25 16.14L17.23 16.16L15.76 16.16ZM17.23 20L17.25 20.02C17.25 20.44 16.91 20.77 16.5 20.77C16.08 20.77 15.75 20.44 15.75 20.02L15.76 20L17.23 20Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M16.5 16.14L16.5 20.02" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+	</g>
+</svg>

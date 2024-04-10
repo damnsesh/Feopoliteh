@@ -1,0 +1,24 @@
+<svg width="22.000000" height="23.000000" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip3_285">
+			<rect id="documents-minimalistic-svgrepo-com" width="22.000000" height="23.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip3_285)">
+		<path id="path" d="M4.58 7.66C4.58 4.95 4.58 3.6 5.38 2.75C6.19 1.91 7.49 1.91 10.08 1.91L11.91 1.91C14.5 1.91 15.8 1.91 16.61 2.75C17.41 3.6 17.41 4.95 17.41 7.66L17.41 15.33C17.41 18.04 17.41 19.39 16.61 20.24C15.8 21.08 14.5 21.08 11.91 21.08L10.08 21.08C7.49 21.08 6.19 21.08 5.38 20.24C4.58 19.39 4.58 18.04 4.58 15.33L4.58 7.66Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M5.38 2.75C6.19 1.91 7.49 1.91 10.08 1.91L11.91 1.91C14.5 1.91 15.8 1.91 16.61 2.75C17.41 3.6 17.41 4.95 17.41 7.66L17.41 15.33C17.41 18.04 17.41 19.39 16.61 20.24C15.8 21.08 14.5 21.08 11.91 21.08L10.08 21.08C7.49 21.08 6.19 21.08 5.38 20.24C4.58 19.39 4.58 18.04 4.58 15.33L4.58 7.66C4.58 4.95 4.58 3.6 5.38 2.75Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000"/>
+		<path id="path" d="M8.27 13.18L8.25 13.2C7.83 13.2 7.5 12.87 7.5 12.45C7.5 12.03 7.83 11.7 8.25 11.7L8.27 11.72L8.27 13.18ZM13.73 11.72L13.75 11.7C14.17 11.7 14.5 12.03 14.5 12.45C14.5 12.87 14.17 13.2 13.75 13.2L13.73 13.18L13.73 11.72Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M8.25 12.45L13.75 12.45" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round"/>
+		<path id="path" d="M8.27 9.35L8.25 9.37C7.83 9.37 7.5 9.04 7.5 8.62C7.5 8.2 7.83 7.87 8.25 7.87L8.27 7.89L8.27 9.35ZM13.73 7.89L13.75 7.87C14.17 7.87 14.5 8.2 14.5 8.62C14.5 9.04 14.17 9.37 13.75 9.37L13.73 9.35L13.73 7.89Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M8.25 8.62L13.75 8.62" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round"/>
+		<path id="path" d="M8.27 17.02L8.25 17.04C7.83 17.04 7.5 16.71 7.5 16.29C7.5 15.87 7.83 15.54 8.25 15.54L8.27 15.56L8.27 17.02ZM10.98 15.56L11 15.54C11.42 15.54 11.75 15.87 11.75 16.29C11.75 16.71 11.42 17.04 11 17.04L10.98 17.02L10.98 15.56Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M8.25 16.29L11 16.29" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round"/>
+		<path id="path" d="M1.1 4.81L1.08 4.79C1.08 4.37 1.41 4.04 1.83 4.04C2.25 4.04 2.58 4.37 2.58 4.79L2.56 4.81L1.1 4.81ZM2.56 18.18L2.58 18.2C2.58 18.62 2.25 18.95 1.83 18.95C1.41 18.95 1.08 18.62 1.08 18.2L1.1 18.18L2.56 18.18Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M1.83 4.79L1.83 18.2" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round"/>
+		<path id="path" d="M19.43 4.81L19.41 4.79C19.41 4.37 19.74 4.04 20.16 4.04C20.58 4.04 20.91 4.37 20.91 4.79L20.89 4.81L19.43 4.81ZM20.89 18.18L20.91 18.2C20.91 18.62 20.58 18.95 20.16 18.95C19.74 18.95 19.41 18.62 19.41 18.2L19.43 18.18L20.89 18.18Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M20.16 4.79L20.16 18.2" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round"/>
+	</g>
+</svg>
