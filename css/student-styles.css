@@ -1,0 +1,808 @@
+*{
+    margin:0;
+    padding:0;
+    font-size:16px;
+}
+@font-face {
+    font-family: M-b;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: M-l;
+    src: url(../fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: M-sm;
+    src: url(../fonts/Montserrat-SemiBold.ttf);
+}
+
+body{
+    margin:0;
+    padding:0;
+    background: #191A1B;
+}
+a{
+  text-decoration: none;  
+  outline:none;
+  color:inherit;
+}
+
+.wrap{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    max-width: 1350px;
+    min-width: 1200px;
+}
+
+.container{
+    width: 100%;
+}
+
+.container h1{
+  color: #FFF;
+  text-transform: uppercase;
+  font-family: M-b;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin: 6rem 0rem 1rem 0rem;
+}
+
+/*Для устройств шириной до 480px*/
+@media only screen and (max-width: 480px){
+  *{
+      font-size: 3vw;
+  }
+  body{
+      font-size: 3vw;
+      width:100%;
+  }
+  .wrap{
+    min-width: 50px;
+    max-width:480px;
+    width:90%;
+  }
+  .container h1{
+      font-size: 2.3rem;
+      margin: 4.5rem 0rem 1rem 0rem;
+  }
+}
+
+/*Для устройств шириной от 481px до 950px*/
+@media only screen and (min-device-width: 481px) and (max-device-width: 950px) {
+  *{
+      font-size: 2vw;
+  }
+  body{
+      font-size: 2vw;
+      width:100%;
+  }
+  .wrap{
+    min-width: 480px;
+    max-width:950px;
+    width:90%;
+  }
+  .container h1{
+      font-size: 2.3rem;
+  }
+}
+
+/*Для устройств шириной от 951px до 1350px*/
+@media only screen and (min-device-width: 951px) and (max-device-width: 1350px) {
+  *{
+      font-size: 1vw;
+  }
+  body{
+      font-size: 2vw;
+      width:100%;
+  }
+  .wrap{
+      min-width: 750px;
+      max-width:1350px;
+      width:80%;
+  }
+  .container h1{
+      font-size: 2.3rem;
+  }
+}
+
+
+/* Слайдер */
+
+.slider-top-title h1{
+    font-size: 3rem;
+    color:#fff;
+    font-family: M-b;
+}
+
+.slider-top-title span{
+    font-size: 3rem;
+    color:#29FFF1;
+    font-family: M-b;
+}
+
+.slider-container {
+    position: relative;
+    margin:0 auto;
+    margin-bottom: 7rem;
+    height: 22.688rem;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .slider-dots {
+    position: absolute;
+    bottom: 0.625rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  
+  .dot {
+    width: 0.625rem;
+    height: 0.625rem;
+    margin: 0 0.313rem;
+    background-color: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #29FFF1;
+  }
+
+
+/*Для устройств шириной до 480px*/
+@media only screen and (max-width: 480px){
+  .slider-top-title h1 {
+    font-size: 2rem;
+}
+.slider-top-title h1 {
+  font-size: 2rem;
+}
+.slider-container {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  height: 20rem;
+  overflow: hidden;
+}
+.slide img {
+  width: 100%;
+  height: 150%;
+  object-fit: cover;
+}
+.slider-top{
+  width:100%;
+}
+.slider-dots {
+  display: none;
+}
+
+}
+
+
+/*Для устройств шириной от 481px до 950px*/
+@media only screen and (min-device-width: 481px) and (max-device-width: 950px) {
+  .slider-container {
+    margin-bottom: 5rem;
+    height: 16.688rem;
+}
+
+}
+
+
+
+
+
+  /* Фильтр */
+
+  .filter-student{
+    border-radius: 2.5rem;
+    background: rgba(255, 255, 255, 0.12);
+    padding: 1.5rem 3rem;
+    text-align: center;
+}
+
+.list-filter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.item-filter{
+    list-style-type: none;
+
+}
+
+.item-filter a{
+    text-decoration: none;  
+    outline:none;
+    text-transform: uppercase;
+    font-family: M-sm ;
+    color:#fff;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 200ms ease-in;
+}
+
+.item-filter a:hover{
+    color:#00ECDC;
+}
+
+
+
+/*Для устройств шириной до 480px*/
+@media only screen and (max-width: 480px){
+  .item-filter a {
+    font-size: 0.7rem;
+}
+.list-filter {
+  gap: 0.3rem;
+}
+.filter-student {
+  padding: 1.5rem 2rem;
+}
+
+}
+
+/*Для устройств шириной от 481px до 950px*/
+@media only screen and (min-device-width: 481px) and (max-device-width: 950px) {
+  .item-filter a {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
+
+/* Расписание */
+
+
+.chcourse {
+  padding-top:4.375rem;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 3.438rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  margin:0 auto;
+}
+
+.hidden-course {
+  width: 18.5rem;
+  height: 4.563rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 200ms ease-in;
+  border-radius: 1.25rem;
+  font-family: M-sm;
+  font-size: 1.75rem;
+  color:#fff;
+}
+
+.colorcourse1{
+  background-color: #DD4798;
+}
+
+.colorcourse2{
+  background-color: #DDC547;
+}
+
+.colorcourse3{
+  background-color: #53DD47;
+}
+
+.colorcourse4{
+  background-color: #8047DD;
+}
+
+.colorcourse1:hover {
+  background-color: #DD4798;
+}
+
+.colorcourse2:hover {
+  background-color: #ad9a3a;
+}
+
+.colorcourse3:hover {
+  background-color: #49b93e;
+}
+
+.colorcourse3:hover {
+  background-color: #7240c4;
+}
+
+.schedule-flex{
+    display: flex;
+    padding-top:2rem;
+    justify-content: space-between;
+}
+
+
+.schedule-item{
+    width: 17.8rem;
+    height: 12.6rem;
+    flex-shrink: 0;
+    border: 0.313rem solid #1F2122;
+    border-radius: 1.25rem;
+    background: #1F2122;
+    transition: all 200ms ease-in ;
+    position: relative;
+}
+
+.centered-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .centered-text p {
+    margin: 0;
+    font-size: 1.563rem;
+    font-family: M-b;
+    color:#ffff;
+  }
+
+  .shape {
+    display: block;
+    width: 4.375rem;
+    height: 3.5rem;
+    flex-shrink: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color:#1F2122;
+    transition: all 200ms ease-in ;
+    border-radius: 0 1.25rem 0 5rem;
+  }
+
+
+  .fourth:hover .shape{
+    background: #8047DD;
+  }
+
+  .fourth:hover{
+    border: 0.313rem solid #8047DD;
+    color: #936EE2;
+  }
+
+  .third:hover .shape{
+    background: #53DD47;
+  }
+
+  .third:hover{
+    border: 0.313rem solid  #53DD47;
+    color: #53DD47;
+  }
+
+  .second:hover .shape{
+    background:  #DDC547;
+  }
+
+  .second:hover{
+    border: 0.313rem solid  #DDC547;
+    color:  #DDC547;
+  }
+
+  .first:hover .shape{
+    background:  #DD4798;
+  }
+
+  .first:hover{
+    border: 0.313rem solid  #DD4798;
+    color:  #DD4798;
+  }
+
+
+
+/*Для устройств шириной до 480px*/
+@media only screen and (max-width: 480px){
+  .schedule-item {
+    width: 13.8rem;
+    height: 6.6rem;
+}
+.schedule-flex {
+  display: flex;
+  padding-top: 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 1.6rem;
+}
+.button-block {
+  margin-top: 1rem;
+}
+
+.hidden-course {
+  width: 14.4rem;
+  height: 4.563rem;
+}
+.chcourse {
+  row-gap: 1.6rem;
+}
+}
+
+/*Для устройств шириной от 481px до 950px*/
+@media only screen and (min-device-width: 481px) and (max-device-width: 950px) {
+  .schedule-flex {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+}
+.schedule-item {
+  width: 20.8rem;
+  height: 12.6rem;
+}
+.hidden-course {
+  width: 21.4rem;
+  height: 5rem;
+}
+.chcourse {
+  row-gap: 1.6rem;
+}
+
+}
+
+
+
+  /* Справка */
+
+  .reference-title h1{
+    font-size: 2.5rem;
+    color:#fff;
+    font-family: M-b;
+    margin-bottom: 1.875rem;
+}
+
+.reference-title p{
+    font-size: 1.75rem;
+    color:#fff;
+    font-family: M-l;
+    line-height: 157.251%;
+    width: 42.063rem;
+    padding-bottom: 1.5rem;
+}
+
+.reference-block{
+  height: fit-content;
+    border-radius: 20px;
+    background: #1F2122;
+    max-width: 1350px;
+    margin:0 auto;
+    position: relative;
+}
+
+.container-reference{
+    padding:2.5rem 6.25rem 2.5rem 6.25rem;
+    display: flex;
+    column-gap: 12.5rem;
+    flex-wrap: wrap;
+}
+
+.inputs{
+    background: none;
+    border:none;
+    outline: none;
+    width: 25rem;
+    border-bottom: 0.063rem solid #B0B0B0;
+    transition: padding 0.3s;
+}
+
+.input__reference{
+    position: relative;
+}
+
+.inputs{
+    font-family: M-l;
+    color:#fff;
+    margin-bottom: 3.125rem;
+}
+
+.inputs:not(:placeholder-shown){
+    padding:0.625rem 0;
+}
+
+.inputs:hover {
+    padding:0.625rem 0;
+}
+
+.input__reference p{
+    color: #FFF;
+    font-family: M-sm;
+    font-size: 1.5rem;
+}
+
+.radiobuttons{
+    display: flex;
+    align-items: center;
+    gap:0.875rem;
+    margin-bottom: 0.625rem;
+}
+
+
+.radiobuttons p{
+    font-family: M-l;
+    font-size: 1rem;
+}
+
+.shape-reference{
+    position: absolute;
+    border-radius: 0rem 1.25rem 0rem 8rem;
+    background: #29FFF1;
+    width: 9.625rem;
+    height: 6.875rem;
+    right:0;
+}
+
+.button-block{
+  position: relative;
+   width: 100%;
+   bottom: 0;
+}
+
+.button-block button{
+    display: flex;
+    margin:0 auto;
+    border-radius: 1.25rem;
+    background: #21CABF;
+    padding:0.813rem 3.75rem;
+    border: none;
+    color:#ffff;
+    font-family: M-b;
+    cursor: pointer;
+    outline: none;
+    transition: 200ms all ease-in;
+}
+
+.button-block button:hover{
+    background: #1caaa1;
+}
+
+/*Для устройств шириной до 480px*/
+@media only screen and (max-width: 480px){
+  .reference-title p {
+    font-size: 1.5rem;
+    width:auto;
+    padding-bottom: 1.5rem;
+}
+.container-reference {
+  padding: 3.5rem 3.5rem 3.5rem 3.5rem;
+  column-gap: 0;
+  flex-wrap: wrap;
+}
+
+.inputs {
+  width: 100%;
+
+}
+.input__reference{
+  width:100%;
+}
+.shape-reference {
+  width: 6.625rem;
+  height: 4.875rem;
+}
+.button-block{
+  margin-top: 1rem;
+}
+}
+
+/*Для устройств шириной от 481px до 950px*/
+@media only screen and (min-device-width: 481px) and (max-device-width: 950px) {
+  .reference-title p {
+    font-size: 1.5rem;
+  }
+  .inputs {
+    width: 100%;
+  
+  }
+  .input__reference{
+    width:100%;
+  }
+  .button-block{
+    margin-top: 1rem;
+  }
+}
+
+
+
+/* Дополнительная информация */
+
+.ad-information{
+  max-width: 1350px;
+  margin:0 auto;
+}
+
+.ad-information h1{
+  font-size: 2.5rem;
+  color:#fff;
+  font-family: M-b;
+  margin-bottom: 1.875rem;
+}
+
+.ag-courses_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+    row-gap: 2rem;
+}
+
+.ag-courses_item {
+  -ms-flex-preferred-size: calc(33.33333% - 1.875rem);
+  flex-basis: calc(33.33333% - 1.875rem);
+  overflow: hidden;
+  border-radius: 1.75rem;
+}
+
+
+.ag-courses-item_link {
+  display: block;
+  padding: 3.75rem 1.25rem 1.875rem 1.25rem;
+  background-color: #1F2122;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+}
+
+
+.ag-courses-item_link:hover,
+.ag-courses-item_link:hover .ag-courses-item_date {
+  text-decoration: none;
+  color: #FFF;
+}
+
+
+.ag-courses-item_link:hover .ag-courses-item_bg {
+  -webkit-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
+}
+
+
+.ag-courses-item_title {
+  min-height: 5.625rem;
+  margin: 1% 0 1rem;
+  font-family: M-sm;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #FFF;
+  z-index: 2;
+  margin-top: 1.25rem;
+  position: relative;
+}
+
+
+.ag-courses-item_bg {
+  height: 8rem;
+  width: 8rem;
+  background-color: #f9b234;
+  z-index: 1;
+  position: absolute;
+  top: -4.688rem;
+  right: -4.688rem;
+  border-radius: 50%;
+
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.ag-courses_item:nth-child(2n) .ag-courses-item_bg {
+  background-color: #3ecd5e;
+}
+.ag-courses_item:nth-child(3n) .ag-courses-item_bg {
+  background-color: #e44002;
+}
+.ag-courses_item:nth-child(4n) .ag-courses-item_bg {
+  background-color: #952aff;
+}
+.ag-courses_item:nth-child(5n) .ag-courses-item_bg {
+  background-color: #cd3e94;
+}
+.ag-courses_item:nth-child(6n) .ag-courses-item_bg {
+  background-color: #4c49ea;
+}
+
+
+
+@media only screen and (max-width: 979px) {
+  .ag-courses_item {
+    -ms-flex-preferred-size: calc(50% - 1.875rem);
+    flex-basis: calc(50% - 1.875rem);
+  }
+  .ag-courses-item_title {
+    min-height: 6.5rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ag-format-container {
+    width: 96%;
+  }
+  .ag-courses-item_title {
+    min-height: 6.5rem;
+    font-size: 1.3rem;
+  }
+
+}
+@media only screen and (max-width: 639px) {
+  .ag-courses_item {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+  .ag-courses-item_title {
+    min-height: 4.5rem;
+    line-height: 1;
+    font-size: 1.3rem;
+  }
+  .ag-courses-item_link {
+    padding: 1.375rem 2.5rem;
+  }
+  .ag-courses-item_date-box {
+    font-size: 1rem;
+  }
+}
+
+.links-blocks{
+  padding-top:2rem;
+}
+
+.item-links{
+  display: flex;
+  align-items: center;
+  gap:0.625rem;
+}
+
+.mb-links{
+  margin-bottom: 1.875rem;
+}
+
+.item-links a{
+  font-family: M-sm;
+  font-size: 1.25rem;
+  color:#ffff;
+  text-decoration: none;
+}
+
+.item-links img{
+  width: 2.5rem;
+}
+
+
