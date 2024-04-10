@@ -142,6 +142,7 @@
 <section class="news-block wrap" id="news">
 
   <div class="news-block__container container">
+    <div class="news-columns">
     <div class="first-column">
       <img src="../images/news1.png">
       <div class="date-news">
@@ -186,6 +187,7 @@
       </div>
     </div>
   </div>
+  </div>
   <div class="button-more">
     <a href="http://feopoliteh.ru/news">Все новости</a>
   </div>
@@ -204,24 +206,24 @@
 
       <div class="first__part">
           <div class="upper">
-          <div class="img__one">
+          <div class="img__one" id='image1'>
           </div>
           <div class="duo__img">
-              <div class="img__two">
+              <div class="img__two" id='image2'>
               </div>
-              <div class="img__three">
+              <div class="img__three" id='image3'>
               </div>
           </div>
       </div>
       
-      <div class="lower">
+      <div class="lower" id='image4'>
       </div>
       </div>
       
       <div class="second__part">
-      <div class="img__five">
+      <div class="img__five" id='image5'>
       </div>
-      <div class="img__six">
+      <div class="img__six" id='image6'>
       </div>
       
       </div>

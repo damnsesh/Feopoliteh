@@ -2,10 +2,12 @@ document.addEventListener("DOMContentLoaded", function() {
   const animateButton = document.getElementById("animateButton");
   const closeButton = document.getElementById("closeButton");
   const animatedElement = document.getElementById("animatedElement");
+  const body =  document.getElementById('body');
 
 
   animateButton.addEventListener("click", function() {
     animatedElement.style.display = "flex";
+    body.style.overflow='hidden';
     animatedElement.style.justifyContent="center";
     animatedElement.classList.add("animated-burger-open");
   });
@@ -17,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Делаем задержку перед скрытием элемента, чтобы анимация завершилась
     setTimeout(function() {
       animatedElement.style.display = "none";
+      body.style.overflow='auto';
       animatedElement.classList.remove("animated-burger-open", "animated-burger-close");
     }, 1000); // Задержка в 1 секунду (время анимации)
 
